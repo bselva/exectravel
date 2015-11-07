@@ -98,6 +98,14 @@
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                                 <animations/>
                             </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8qD-cm-4ef">
+                                <rect key="frame" x="38" y="376" width="300" height="28"/>
+                                <animations/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <segue destination="WsN-h9-nmO" kind="show" id="rXJ-Or-42e"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -106,7 +114,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wXx-Zj-Gdq" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="555.5" y="-283.5"/>
+            <point key="canvasLocation" x="691.5" y="-549.5"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="icC-ti-xrq">
@@ -124,6 +132,14 @@
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                                 <animations/>
                             </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uAh-6V-fuR">
+                                <rect key="frame" x="48" y="395" width="276" height="53"/>
+                                <animations/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <segue destination="WsN-h9-nmO" kind="show" id="2L5-Oh-hYh"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -132,7 +148,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="PDN-kQ-6De" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="571.5" y="489.5"/>
+            <point key="canvasLocation" x="691.5" y="499.5"/>
         </scene>
     </scenes>
     <resources>
@@ -141,4 +157,7 @@
         <image name="02b_my flights_select destiny" width="1080" height="1920"/>
         <image name="02c_my flights_search flights" width="1080" height="1920"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="2L5-Oh-hYh"/>
+    </inferredMetricsTieBreakers>
 </document>
