@@ -17,17 +17,89 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="01_index" translatesAutoresizingMaskIntoConstraints="NO" id="RRn-lT-Bwd">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="01_index_bg" translatesAutoresizingMaskIntoConstraints="NO" id="Ugz-AL-iPS">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                                 <animations/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5sD-iD-e1g">
-                                <rect key="frame" x="20" y="226" width="335" height="93"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Z5M-uk-dfn">
+                                <rect key="frame" x="24" y="339" width="326" height="109"/>
                                 <animations/>
+                                <color key="backgroundColor" red="1" green="0.56033663290000002" blue="0.26310851130000001" alpha="0.0" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="20"/>
+                                <inset key="contentEdgeInsets" minX="10" minY="23" maxX="0.0" maxY="0.0"/>
+                                <state key="normal" title="Profile" backgroundImage="card_M">
+                                    <color key="titleColor" red="0.083976090030000006" green="0.1999044888" blue="0.49314903850000003" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
                                 <connections>
-                                    <segue destination="WsN-h9-nmO" kind="show" id="XMM-bz-DAR"/>
+                                    <action selector="alertUser:" destination="dkx-z0-nzr" eventType="touchUpInside" id="5A9-zz-vqb"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="HQ: San Francisco | Prefered Seat: Front Aisle" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Cix-TO-7iG">
+                                <rect key="frame" x="38" y="398" width="337" height="21"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="13"/>
+                                <color key="textColor" red="0.40000000600000002" green="0.40000000600000002" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Good morning Mr. Selva" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TDt-qY-dIy">
+                                <rect key="frame" x="24" y="142" width="256" height="32"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="18"/>
+                                <color key="textColor" red="0.95300480769999996" green="0.95300480769999996" blue="0.95300480769999996" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="About Exectravel" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="E0z-aq-Iqb">
+                                <rect key="frame" x="30" y="591" width="130" height="21"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="15"/>
+                                <color key="textColor" red="0.90196079019999997" green="0.90196079019999997" blue="0.90196079019999997" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uhR-GJ-Rxc">
+                                <rect key="frame" x="24" y="456" width="326" height="109"/>
+                                <animations/>
+                                <color key="backgroundColor" red="1" green="0.56033663290000002" blue="0.26310851130000001" alpha="0.0" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="20"/>
+                                <inset key="contentEdgeInsets" minX="10" minY="23" maxX="0.0" maxY="0.0"/>
+                                <state key="normal" title="Request Voucher" backgroundImage="card_M">
+                                    <color key="titleColor" red="0.083976090030000006" green="0.1999044888" blue="0.49314903850000003" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="alertUser:" destination="dkx-z0-nzr" eventType="touchUpInside" id="o6p-4T-pyB"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="01_index_header" translatesAutoresizingMaskIntoConstraints="NO" id="WMl-ug-EfH">
+                                <rect key="frame" x="0.0" y="8" width="375" height="126"/>
+                                <animations/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9Z9-Zk-70W">
+                                <rect key="frame" x="24" y="222" width="326" height="109"/>
+                                <animations/>
+                                <color key="backgroundColor" red="1" green="0.56033663290000002" blue="0.26310851130000001" alpha="0.0" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="20"/>
+                                <inset key="contentEdgeInsets" minX="10" minY="23" maxX="0.0" maxY="0.0"/>
+                                <state key="normal" title="Flights" backgroundImage="card_M">
+                                    <color key="titleColor" red="0.083976090030000006" green="0.1999044888" blue="0.49314903850000003" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="alertUser:" destination="dkx-z0-nzr" eventType="touchUpInside" id="x8U-mP-DLY"/>
+                                    <segue destination="WsN-h9-nmO" kind="show" id="EBx-NL-IP2"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Acme Inc. still have 23 vouchers available" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9JL-73-ZZ6">
+                                <rect key="frame" x="38" y="283" width="337" height="21"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="13"/>
+                                <color key="textColor" red="0.40000000600000002" green="0.40000000600000002" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Contact us" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4w7-iU-5Uz">
+                                <rect key="frame" x="266" y="594" width="84" height="21"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="15"/>
+                                <color key="textColor" red="0.90196079019999997" green="0.90196079019999997" blue="0.90196079019999997" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
@@ -50,23 +122,86 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JDZ-pj-pI2">
-                                <rect key="frame" x="38" y="353" width="298" height="38"/>
-                                <animations/>
-                            </button>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="02_my flights" translatesAutoresizingMaskIntoConstraints="NO" id="mF6-Xs-UEl">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="02_my-flights_bg" translatesAutoresizingMaskIntoConstraints="NO" id="QkX-Cq-Rjd">
+                                <rect key="frame" x="-3" y="0.0" width="375" height="667"/>
                                 <animations/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="La6-UY-7bg">
-                                <rect key="frame" x="38" y="264" width="298" height="41"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="01_index_header" translatesAutoresizingMaskIntoConstraints="NO" id="rdW-mn-4aP">
+                                <rect key="frame" x="-3" y="0.0" width="380" height="118"/>
                                 <animations/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="card_G" translatesAutoresizingMaskIntoConstraints="NO" id="UlT-TO-Z21">
+                                <rect key="frame" x="5" y="126" width="359" height="239"/>
+                                <animations/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="card_M" translatesAutoresizingMaskIntoConstraints="NO" id="Ggb-NT-Gmw">
+                                <rect key="frame" x="5" y="425" width="359" height="114"/>
+                                <animations/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="At which location?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bRA-hz-m3R">
+                                <rect key="frame" x="20" y="268" width="149" height="21"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="18"/>
+                                <color key="textColor" red="0.0" green="0.25098040700000002" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Dec. 1 2015 at 10:30 a.m." borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="BC7-jH-uhZ">
+                                <rect key="frame" x="20" y="216" width="328" height="30"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="You have used 18 vouchers this month" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="G2U-cR-J98">
+                                <rect key="frame" x="18" y="483" width="337" height="21"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="14"/>
+                                <color key="textColor" red="0.40000000600000002" green="0.40000000600000002" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="New flight from SFO" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="afE-h4-pN3">
+                                <rect key="frame" x="20" y="131" width="164" height="21"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="18"/>
+                                <color key="textColor" red="0.0" green="0.25098040700000002" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="NYC" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="uUu-jk-Emg">
+                                <rect key="frame" x="20" y="297" width="328" height="30"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gHM-bS-ULq">
+                                <rect key="frame" x="8" y="373" width="353" height="46"/>
+                                <animations/>
+                                <color key="tintColor" red="0.90196079019999997" green="0.90196079019999997" blue="0.90196079019999997" alpha="1" colorSpace="calibratedRGB"/>
+                                <inset key="contentEdgeInsets" minX="0.0" minY="-12" maxX="0.0" maxY="0.0"/>
+                                <state key="normal" title="Search available flights" backgroundImage="btn_blue"/>
                                 <connections>
-                                    <segue destination="7jZ-rp-Vg4" kind="popoverPresentation" popoverAnchorView="La6-UY-7bg" id="vUl-z9-tF0">
-                                        <popoverArrowDirection key="popoverArrowDirection" up="YES" down="YES" left="YES" right="YES"/>
-                                    </segue>
+                                    <segue destination="4tI-pM-lEg" kind="show" id="rXB-qb-QIh"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="change location" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UuA-LH-1sG">
+                                <rect key="frame" x="262" y="135" width="86" height="14"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="12"/>
+                                <color key="textColor" red="0.0" green="0.25098040700000002" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Past Flights" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kYq-W8-crW">
+                                <rect key="frame" x="20" y="445" width="95" height="21"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="18"/>
+                                <color key="textColor" red="0.0" green="0.25098040700000002" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="When is you next meeting?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OGn-t7-F3T">
+                                <rect key="frame" x="20" y="187" width="219" height="21"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="18"/>
+                                <color key="textColor" red="0.0" green="0.25098040700000002" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -76,92 +211,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Qg8-My-gsu" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-4.5" y="22.5"/>
-        </scene>
-        <!--FlightViewController-->
-        <scene sceneID="DH4-By-oQT">
-            <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="wXx-Zj-Gdq" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <viewController title="FlightViewController" id="7jZ-rp-Vg4" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="dD9-gZ-QrG"/>
-                        <viewControllerLayoutGuide type="bottom" id="EC0-vo-Q8w"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="ews-Na-q4p">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="02a_my flights_set date" translatesAutoresizingMaskIntoConstraints="NO" id="Qay-sM-gcq">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                                <animations/>
-                            </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rmt-nK-HZ7">
-                                <rect key="frame" x="39" y="376" width="298" height="30"/>
-                                <animations/>
-                                <connections>
-                                    <segue destination="d3H-Jb-xMh" kind="show" id="j9l-LC-vHF"/>
-                                </connections>
-                            </button>
-                        </subviews>
-                        <animations/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    </view>
-                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
-                </viewController>
-            </objects>
-            <point key="canvasLocation" x="637.5" y="22.5"/>
-        </scene>
-        <!--FlightViewController-->
-        <scene sceneID="LGn-xt-eFK">
-            <objects>
-                <viewController title="FlightViewController" id="d3H-Jb-xMh" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="9lQ-co-be0"/>
-                        <viewControllerLayoutGuide type="bottom" id="AZz-Rt-TM2"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="m5f-dZ-Q6q">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="02_my flights" translatesAutoresizingMaskIntoConstraints="NO" id="5af-mC-b6E">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                                <animations/>
-                            </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lfk-zW-KcK">
-                                <rect key="frame" x="38" y="353" width="297" height="40"/>
-                                <animations/>
-                                <connections>
-                                    <segue destination="PdM-zy-DQB" kind="popoverPresentation" popoverAnchorView="lfk-zW-KcK" id="ffl-FF-6de">
-                                        <popoverArrowDirection key="popoverArrowDirection" up="YES" down="YES" left="YES" right="YES"/>
-                                    </segue>
-                                </connections>
-                            </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="  Tue 19 Nov 8:00PM" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gqe-mX-7cU">
-                                <rect key="frame" x="38" y="264" width="297" height="40"/>
-                                <animations/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
-                                <nil key="highlightedColor"/>
-                                <color key="shadowColor" white="1" alpha="0.0" colorSpace="calibratedWhite"/>
-                            </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="i0l-2Y-X2u">
-                                <rect key="frame" x="38" y="264" width="297" height="40"/>
-                                <animations/>
-                                <connections>
-                                    <segue destination="7jZ-rp-Vg4" kind="popoverPresentation" popoverAnchorView="i0l-2Y-X2u" id="ong-DY-IPO">
-                                        <popoverArrowDirection key="popoverArrowDirection" up="YES" down="YES" left="YES" right="YES"/>
-                                    </segue>
-                                </connections>
-                            </button>
-                        </subviews>
-                        <animations/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    </view>
-                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="fWg-KJ-6sE" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="637.5" y="1158.5"/>
         </scene>
         <!--FlightViewController-->
         <scene sceneID="nL3-uh-pAB">
@@ -182,16 +231,10 @@
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aVO-9Y-2fi">
                                 <rect key="frame" x="44" y="394" width="287" height="56"/>
                                 <animations/>
-                                <connections>
-                                    <segue destination="m3r-Ow-PQi" kind="show" id="G7w-YZ-7JL"/>
-                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gEq-Tp-gze">
                                 <rect key="frame" x="49" y="468" width="85" height="36"/>
                                 <animations/>
-                                <connections>
-                                    <segue destination="m3r-Ow-PQi" kind="show" id="SOl-3j-exo"/>
-                                </connections>
                             </button>
                         </subviews>
                         <animations/>
@@ -201,40 +244,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Jyf-GT-yr8" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1441.5" y="1166.5"/>
-        </scene>
-        <!--FlightViewController-->
-        <scene sceneID="TX6-J2-K2H">
-            <objects>
-                <viewController title="FlightViewController" id="m3r-Ow-PQi" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="W9h-Nf-5sw"/>
-                        <viewControllerLayoutGuide type="bottom" id="q6b-9h-VOn"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="tfN-Fc-hAj">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="02c_my flights_search flights" translatesAutoresizingMaskIntoConstraints="NO" id="yWg-0X-grX">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                                <animations/>
-                            </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8Yt-kb-Asu">
-                                <rect key="frame" x="20" y="461" width="335" height="35"/>
-                                <animations/>
-                                <connections>
-                                    <segue destination="4tI-pM-lEg" kind="show" id="bR0-FU-BHQ"/>
-                                </connections>
-                            </button>
-                        </subviews>
-                        <animations/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    </view>
-                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="CmA-pk-aik" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="2241.5" y="1166.5"/>
+            <point key="canvasLocation" x="-14.5" y="-821.5"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="fKo-iT-MUg">
@@ -264,7 +274,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="okw-kJ-beO">
-                                <rect key="frame" x="238" y="547" width="85" height="34.5"/>
+                                <rect key="frame" x="238" y="547" width="85" height="35"/>
                                 <animations/>
                                 <connections>
                                     <segue destination="GFV-z3-INc" kind="show" id="iNu-kS-2cF"/>
@@ -278,7 +288,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="M0R-HB-HwA" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1593.5" y="2051.5"/>
+            <point key="canvasLocation" x="425.5" y="1021.5"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="8Fc-4M-s2I">
@@ -311,7 +321,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="NBS-YP-zaR" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="613.5" y="2035.5"/>
+            <point key="canvasLocation" x="-578.5" y="943.5"/>
         </scene>
         <!--FlightSearchController-->
         <scene sceneID="D80-QX-8iO">
@@ -353,9 +363,6 @@
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vFg-GG-BwE">
                                 <rect key="frame" x="49" y="480" width="85" height="32"/>
                                 <animations/>
-                                <connections>
-                                    <segue destination="m3r-Ow-PQi" kind="show" id="q7V-9x-amo"/>
-                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zLP-N0-zkm">
                                 <rect key="frame" x="44" y="221" width="293" height="62"/>
@@ -372,23 +379,23 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="uiR-2u-kw9" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2221.5" y="2051.5"/>
+            <point key="canvasLocation" x="425.5" y="34.5"/>
         </scene>
     </scenes>
     <resources>
-        <image name="01_index" width="1080" height="1920"/>
-        <image name="02_my flights" width="1080" height="1920"/>
-        <image name="02a_my flights_set date" width="1080" height="1920"/>
+        <image name="01_index_bg" width="1080" height="1920"/>
+        <image name="01_index_header" width="972" height="263"/>
+        <image name="02_my-flights_bg" width="1080" height="1920"/>
         <image name="02b_my flights_select destiny" width="1080" height="1920"/>
-        <image name="02c_my flights_search flights" width="1080" height="1920"/>
         <image name="02d_my flights_select flight" width="1080" height="1920"/>
         <image name="02e_my flights_confirm" width="1080" height="1920"/>
         <image name="02f_my flights_confirmed" width="1080" height="1920"/>
+        <image name="btn_blue" width="1000" height="145"/>
+        <image name="card_G" width="1000" height="1220"/>
+        <image name="card_M" width="1000" height="785"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="ong-DY-IPO"/>
         <segue reference="vJM-Mk-hOV"/>
-        <segue reference="dRc-fn-UXo"/>
-        <segue reference="q7V-9x-amo"/>
+        <segue reference="rXB-qb-QIh"/>
     </inferredMetricsTieBreakers>
 </document>
