@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="15A284" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9059" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
     </dependencies>
     <scenes>
         <!--MainViewController-->
@@ -201,7 +201,7 @@
                                 <color key="textColor" red="0.0" green="0.25098040700000002" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="NYC" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="uUu-jk-Emg">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="SFO" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="uUu-jk-Emg">
                                 <rect key="frame" x="23" y="339" width="328" height="30"/>
                                 <animations/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -249,6 +249,7 @@
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <connections>
                         <outlet property="dateField" destination="BC7-jH-uhZ" id="zV8-Wf-zRF"/>
+                        <outlet property="locationField" destination="uUu-jk-Emg" id="oHA-nR-Zlw"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Qg8-My-gsu" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -282,10 +283,6 @@
                             </imageView>
                             <imageView opaque="NO" userInteractionEnabled="NO" alpha="0.59999999999999998" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="card_M" translatesAutoresizingMaskIntoConstraints="NO" id="lEO-hD-6V8">
                                 <rect key="frame" x="8" y="445" width="359" height="119"/>
-                                <animations/>
-                            </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="card_MG" translatesAutoresizingMaskIntoConstraints="NO" id="Abv-3T-TmQ">
-                                <rect key="frame" x="8" y="168" width="359" height="328"/>
                                 <animations/>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="card_greybar" translatesAutoresizingMaskIntoConstraints="NO" id="VVB-Io-sJh">
@@ -474,11 +471,39 @@
                                     <segue destination="f93-nD-ijU" kind="show" animates="NO" id="gke-BE-iee"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="st6-Nz-ZdW">
+                                <rect key="frame" x="20" y="419" width="336" height="67"/>
+                                <animations/>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="card_MG" translatesAutoresizingMaskIntoConstraints="NO" id="Abv-3T-TmQ">
+                                <rect key="frame" x="8" y="165" width="359" height="342"/>
+                                <animations/>
+                            </imageView>
                         </subviews>
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="arrivalDate1" destination="uKY-77-kfj" id="1Lc-44-pI7"/>
+                        <outlet property="arrivalDate2" destination="Ufm-Yb-Wtu" id="Fg5-tu-UXx"/>
+                        <outlet property="arrivalDate3" destination="8kT-yn-Y1e" id="gub-d9-NeH"/>
+                        <outlet property="arrivalTime1" destination="KGW-pP-wUR" id="jhL-kp-Vjl"/>
+                        <outlet property="arrivalTime2" destination="oRV-P0-S5S" id="eKs-r7-64v"/>
+                        <outlet property="arrivalTime3" destination="eBP-Yi-hud" id="fWH-nQ-aan"/>
+                        <outlet property="departureDate1" destination="2Et-4j-7hR" id="0JP-Kh-xeG"/>
+                        <outlet property="departureDate2" destination="2cS-d3-daQ" id="EpO-Ry-I06"/>
+                        <outlet property="departureDate3" destination="2cS-d3-daQ" id="kQi-Au-VHI"/>
+                        <outlet property="departureTime1" destination="zkL-la-4zY" id="lg3-U1-YTc"/>
+                        <outlet property="departureTime2" destination="h9O-5l-EUI" id="vOB-A9-Zvw"/>
+                        <outlet property="departureTime3" destination="Ygy-Yh-Gpq" id="7fl-2d-gLD"/>
+                        <outlet property="flightNumber1" destination="p5s-qk-Bpd" id="gnY-Ux-K2c"/>
+                        <outlet property="flightNumber2" destination="TpE-qd-gdW" id="ade-Et-7y4"/>
+                        <outlet property="flightNumber3" destination="9Tw-kf-cI6" id="pI3-oa-1kP"/>
+                        <outlet property="seatAvailable1" destination="AHh-YA-VyV" id="1dy-VV-nqP"/>
+                        <outlet property="seatAvailable2" destination="MR3-5A-TYa" id="0Qn-xl-haD"/>
+                        <outlet property="seatAvailable3" destination="HY3-w9-HEC" id="Od7-2i-R1s"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Jyf-GT-yr8" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -694,7 +719,7 @@
         <image name="card_greybar" width="954" height="107"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="oaS-jG-ifA"/>
         <segue reference="fQI-hn-cuB"/>
+        <segue reference="gke-BE-iee"/>
     </inferredMetricsTieBreakers>
 </document>
