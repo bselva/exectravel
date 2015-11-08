@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		157E77721BEF50BD008A0124 /* ConfirmationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 157E77711BEF50BD008A0124 /* ConfirmationViewController.m */; };
+		157E77741BEF8999008A0124 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 157E77731BEF8999008A0124 /* MapKit.framework */; };
 		3FA453171BEF346D00B8A1A2 /* flight_builder.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FA453121BEF346D00B8A1A2 /* flight_builder.m */; };
 		3FA453181BEF346D00B8A1A2 /* Flow.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FA453141BEF346D00B8A1A2 /* Flow.m */; };
 		3FA453191BEF346D00B8A1A2 /* voucher_builder.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FA453161BEF346D00B8A1A2 /* voucher_builder.m */; };
@@ -52,6 +53,7 @@
 /* Begin PBXFileReference section */
 		157E77701BEF50BD008A0124 /* ConfirmationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ConfirmationViewController.h; sourceTree = "<group>"; };
 		157E77711BEF50BD008A0124 /* ConfirmationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ConfirmationViewController.m; sourceTree = "<group>"; };
+		157E77731BEF8999008A0124 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		3FA453111BEF346D00B8A1A2 /* flight_builder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = flight_builder.h; sourceTree = "<group>"; };
 		3FA453121BEF346D00B8A1A2 /* flight_builder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = flight_builder.m; sourceTree = "<group>"; };
 		3FA453131BEF346D00B8A1A2 /* Flow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Flow.h; sourceTree = "<group>"; };
@@ -97,6 +99,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				157E77741BEF8999008A0124 /* MapKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -120,6 +123,7 @@
 		7B36BB091BEE797800EF67D3 = {
 			isa = PBXGroup;
 			children = (
+				157E77731BEF8999008A0124 /* MapKit.framework */,
 				7B36BB141BEE797800EF67D3 /* StoryBoardTest */,
 				7B36BB2E1BEE797800EF67D3 /* StoryBoardTestTests */,
 				7B36BB391BEE797800EF67D3 /* StoryBoardTestUITests */,
