@@ -232,6 +232,7 @@
 				TargetAttributes = {
 					7B36BB111BEE797800EF67D3 = {
 						CreatedOnToolsVersion = 7.1;
+						DevelopmentTeam = YD6X59KCTG;
 					};
 					7B36BB2A1BEE797800EF67D3 = {
 						CreatedOnToolsVersion = 7.1;
@@ -441,9 +442,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = StoryBoardTest/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.livani.StoryBoardTest;
+				PRODUCT_BUNDLE_IDENTIFIER = com.travelhacks.Exec;
 				PRODUCT_NAME = ExecTravel;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
@@ -453,9 +456,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = StoryBoardTest/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.livani.StoryBoardTest;
+				PRODUCT_BUNDLE_IDENTIFIER = com.travelhacks.Exec;
 				PRODUCT_NAME = ExecTravel;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
