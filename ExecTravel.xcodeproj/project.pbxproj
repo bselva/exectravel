@@ -7,11 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		3FFDEC9C1BEEF7140051B4CE /* airport_builder.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FFDEC981BEEF7140051B4CE /* airport_builder.m */; settings = {ASSET_TAGS = (); }; };
-		3FFDEC9D1BEEF7140051B4CE /* airports.json in Resources */ = {isa = PBXBuildFile; fileRef = 3FFDEC991BEEF7140051B4CE /* airports.json */; settings = {ASSET_TAGS = (); }; };
-		3FFDEC9E1BEEF7140051B4CE /* flight_builder.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FFDEC9B1BEEF7140051B4CE /* flight_builder.m */; settings = {ASSET_TAGS = (); }; };
-		3FFDECA01BEEF7700051B4CE /* dao.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FFDEC9F1BEEF7700051B4CE /* dao.m */; settings = {ASSET_TAGS = (); }; };
-		3FFDECA31BEEFE900051B4CE /* SelectFlightViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FFDECA21BEEFE900051B4CE /* SelectFlightViewController.m */; settings = {ASSET_TAGS = (); }; };
+		3FFDEC9C1BEEF7140051B4CE /* airport_builder.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FFDEC981BEEF7140051B4CE /* airport_builder.m */; };
+		3FFDEC9D1BEEF7140051B4CE /* airports.json in Resources */ = {isa = PBXBuildFile; fileRef = 3FFDEC991BEEF7140051B4CE /* airports.json */; };
+		3FFDEC9E1BEEF7140051B4CE /* flight_builder.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FFDEC9B1BEEF7140051B4CE /* flight_builder.m */; };
+		3FFDECA01BEEF7700051B4CE /* dao.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FFDEC9F1BEEF7700051B4CE /* dao.m */; };
+		3FFDECA31BEEFE900051B4CE /* SelectFlightViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FFDECA21BEEFE900051B4CE /* SelectFlightViewController.m */; };
 		7B36BB171BEE797800EF67D3 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B36BB161BEE797800EF67D3 /* main.m */; };
 		7B36BB1A1BEE797800EF67D3 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B36BB191BEE797800EF67D3 /* AppDelegate.m */; };
 		7B36BB1D1BEE797800EF67D3 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B36BB1C1BEE797800EF67D3 /* ViewController.m */; };
@@ -125,26 +125,21 @@
 		7B36BB141BEE797800EF67D3 /* StoryBoardTest */ = {
 			isa = PBXGroup;
 			children = (
+				7B4923B41BEF1BAD00FC85C3 /* Controllers */,
 				7B36BB181BEE797800EF67D3 /* AppDelegate.h */,
 				7B36BB191BEE797800EF67D3 /* AppDelegate.m */,
-				7B36BB1B1BEE797800EF67D3 /* ViewController.h */,
-				7B36BB1C1BEE797800EF67D3 /* ViewController.m */,
 				7B36BB1E1BEE797800EF67D3 /* Main.storyboard */,
 				7B36BB211BEE797800EF67D3 /* Assets.xcassets */,
 				7B36BB511BEE865200EF67D3 /* emiratesAssets */,
 				7B36BB231BEE797800EF67D3 /* LaunchScreen.storyboard */,
 				7B36BB261BEE797800EF67D3 /* Info.plist */,
 				7B36BB151BEE797800EF67D3 /* Supporting Files */,
-				7B36BB521BEEC0D500EF67D3 /* FlightViewController.h */,
-				7B36BB531BEEC0D500EF67D3 /* FlightViewController.m */,
 				3FFDEC971BEEF7140051B4CE /* airport_builder.h */,
 				3FFDEC981BEEF7140051B4CE /* airport_builder.m */,
 				3FFDEC991BEEF7140051B4CE /* airports.json */,
 				3FFDEC9F1BEEF7700051B4CE /* dao.m */,
 				3FFDEC9A1BEEF7140051B4CE /* dao.h */,
 				3FFDEC9B1BEEF7140051B4CE /* flight_builder.m */,
-				3FFDECA11BEEFE900051B4CE /* SelectFlightViewController.h */,
-				3FFDECA21BEEFE900051B4CE /* SelectFlightViewController.m */,
 			);
 			path = StoryBoardTest;
 			sourceTree = "<group>";
@@ -184,6 +179,19 @@
 				7B36BB4C1BEE863B00EF67D3 /* 01_index_header.png */,
 			);
 			name = emiratesAssets;
+			sourceTree = "<group>";
+		};
+		7B4923B41BEF1BAD00FC85C3 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				3FFDECA11BEEFE900051B4CE /* SelectFlightViewController.h */,
+				3FFDECA21BEEFE900051B4CE /* SelectFlightViewController.m */,
+				7B36BB531BEEC0D500EF67D3 /* FlightViewController.m */,
+				7B36BB521BEEC0D500EF67D3 /* FlightViewController.h */,
+				7B36BB1C1BEE797800EF67D3 /* ViewController.m */,
+				7B36BB1B1BEE797800EF67D3 /* ViewController.h */,
+			);
+			name = Controllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
