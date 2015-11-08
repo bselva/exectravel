@@ -109,7 +109,7 @@ numberOfRowsInComponent:(NSInteger)component{
     [self.locationField setText:destination];
 
     Flow* flow = [Flow sharedFlow];
-    [flow setSelectedDestination:destination];
+    [flow setSelectedDestination:[[self.locationSourceArray objectAtIndex:row] iata]];
 
 //    [self.locationField setText:[[self.locationSourceArray objectAtIndex:row] fullName]];
 

@@ -42,12 +42,12 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "StoryBoardTest/FlightViewController.m"
-            timestampString = "468674982.710898"
+            timestampString = "468675662.564746"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "106"
-            endingLineNumber = "106"
-            landmarkName = "-pickerView:didSelectRow:inComponent:"
+            startingLineNumber = "96"
+            endingLineNumber = "96"
+            landmarkName = "-numberOfComponentsInPickerView:"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>

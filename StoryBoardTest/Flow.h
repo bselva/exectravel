@@ -32,7 +32,7 @@
 - (void)loadAirports;
 
 - (NSArray*)getUniqueAirportList;
-- (NSArray*)getFlightsFrom:(NSString *)cityOne withDestination:(NSString *)cityTwo;
+- (NSArray*)getFlightsFromSelectedCitiesAndDate;
 - (UserData*) getUserData;
 
 @end

@@ -127,28 +127,32 @@
     
 }
 
-- (NSArray*)getFlightsFrom:(NSString *)cityOne withDestination:(NSString *)cityTwo{
+- (NSArray*)getFlightsFromSelectedCitiesAndDate{
     
     NSString* userLocation = self.userData.defaultLocation;
     NSMutableArray *response = [[NSMutableArray alloc] init];
     
     for (Flight* flight in [self allFlights]){
-        
         NSString* origin = [flight origin];
         NSString* destination = [flight destination];
-        
-        if([origin isEqualToString:cityOne] && [origin isEqualToString:cityTwo]){
+              
+        if([origin isEqualToString:userLocation] && [destination isEqualToString:self.selectedDestination]){
             
             //TODO check the date
-                
+            NSLog(@"ADDICIONADO %@", flight.number);
+            
             [response addObject:flight];
             
+        }else{
+            
+            NSLog(@"%@, %@, %@, %@ nao add, eh diferente", origin, destination, userLocation, self.selectedDestination);
+
         }
         
     }
     
-    return response;
-    
+   return response;
+
 }
 
 
