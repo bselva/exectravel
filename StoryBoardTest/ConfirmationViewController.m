@@ -73,7 +73,7 @@
     [self.departureTime setText:[Flow dateFromISO8601StringTime:f.departureTime]];
     
     [self.arrivalDate setText:[Flow dateFromISO8601StringDate:f.arrivalTime]];
-    [self.arrivalDate setText:[Flow dateFromISO8601StringTime:f.arrivalTime]];
+    [self.arrivalTime setText:[Flow dateFromISO8601StringTime:f.arrivalTime]];
     
     [self.seat setText:f.seat];
     

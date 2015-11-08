@@ -78,7 +78,7 @@
         
         CGAffineTransform t0 = CGAffineTransformMakeTranslation (1.0, self.locationPicker.bounds.size.height/2);
         CGAffineTransform s0 = CGAffineTransformMakeScale       (1.0, 1.0);
-        CGAffineTransform t1 = CGAffineTransformMakeTranslation (25, self.locationPicker.bounds.size.height/2);
+        CGAffineTransform t1 = CGAffineTransformMakeTranslation (25, self.locationPicker.bounds.size.height/2 - 35);
         self.locationPicker.transform = CGAffineTransformConcat    (t0, CGAffineTransformConcat(s0, t1));
         
         self.locationPicker.backgroundColor =[UIColor whiteColor];
