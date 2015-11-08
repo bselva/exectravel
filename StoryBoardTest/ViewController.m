@@ -19,6 +19,16 @@
     [super viewDidLoad];
 }
 
+<<<<<<< HEAD
+=======
+- (void)hideActivityIndicator
+{
+    [self.activityView stopAnimating];
+    self.activityView.hidden = true;
+    self.overlay.hidden = true;
+}
+
+>>>>>>> 77494593bc2b2363acda22e06956682ccbb7a007
 - (IBAction)buttonTapped:(UIButton *)sender{
    
     NSLog(@"Button Tapped");
@@ -27,9 +37,11 @@
 
 - (void)awakeFromNib{
     
-    NSLog(@"The application Starts");
+    NSLog(@"The first view starts");
     Flow* flow = [Flow sharedFlow];
-    
+    UserData* a = [flow getUserData];
+    //NSLog(@"TESTE %@", a.defaultLocation);
+    self.headQuarters.text = a.defaultLocation;
 }
 
 

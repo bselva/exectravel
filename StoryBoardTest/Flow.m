@@ -27,10 +27,10 @@
 
 - (id)init {
     
-//    if (self = [super init]) {
-//        someProperty = [[NSString alloc] initWithString:@"Default Property Value"];
-//    }
-//
+    //    if (self = [super init]) {
+    //        someProperty = [[NSString alloc] initWithString:@"Default Property Value"];
+    //    }
+    //
     [self loadUserPreferences];
     [self loadVouchers];
     [self loadFlights];
@@ -43,18 +43,18 @@
     UserData *tempUserData = [[UserData alloc] init];
     [tempUserData setName:@"Elyzabeth Tayl"];
     [tempUserData setPreferedSeat:@"window"];
-    [tempUserData setDefaultLocation:@"FLN"];
+    [tempUserData setDefaultLocation:@"SFO"];
     [self setUserData:tempUserData];
 }
 
 - (void)loadVouchers{
     
-
+    
     NSArray* vouchers = [VoucherBuilder vouchers];
     
-    for (id voucher in vouchers){
-        NSLog(@"%@",[voucher destination]);
-    }
+    //    for (id voucher in vouchers){
+    //        NSLog(@"%@",[voucher destination]);
+    //    }
     
     [self setAllVouchers:vouchers];
     
@@ -63,12 +63,12 @@
 - (void)loadFlights{
     
     NSError *error;
-   
+    
     NSArray* flights = [FlightBuilder flightsFromJSON:[FlightBuilder readJSONFile] error:error];
     
-    for (id flight in flights){
-        NSLog(@"%@",[flight destination]);
-    }
+    //    for (id flight in flights){
+    //        NSLog(@"%@",[flight destination]);
+    //    }
     
     
     [self setAllFlights:flights];
@@ -79,23 +79,75 @@
     NSError *error;
     NSArray* airports = [AirportBuilder airportsFromJSON:[AirportBuilder readJSONFile] error:error];
     
-    for (id airport in airports){
-        NSLog(@"%@",[airport fullName]);
+    NSMutableDictionary* indexedAirports =  [[NSMutableDictionary alloc] init];
+    
+    for (Airport* airport in airports){
+        
+        [indexedAirports setObject:airport forKey:[airport iata]];
+        
     }
     
+    [self setIndexedAirports:indexedAirports];
     [self setAllAirports:airports];
+    
+    //for (NSString* key in indexedAirports){
+    //     NSLog(@"key %@ - %@",key, [[indexedAirports valueForKey:key] fullName]);
+    //}
     
 }
 
+//return all airports filtered by my Location AndVouchersBought
 - (NSArray*)getUniqueAirportList{
     
-    return self.allAirports;
+    NSString* userLocation = self.userData.defaultLocation;
+    NSMutableArray *response = [[NSMutableArray alloc] init];
+    
+    for (Voucher* voucher in [self allVouchers]){
+        
+        NSString* origin = [voucher origin];
+        NSString* destination = [voucher destination];
+        
+        if([origin isEqualToString:userLocation]){
+            
+            Airport* a = [[self indexedAirports] valueForKey:destination];
+            if(a != NULL){
+                
+                [response addObject:a];
+            }
+            
+        }else{
+            
+            NSLog(@"skipping because the origin is different from userLocation- %@", [voucher destination]);
+            
+        }
+        
+    }
+    
+    return [response valueForKeyPath:@"@distinctUnionOfObjects.self"];
     
 }
 
 - (NSArray*)getFlightsFrom:(NSString *)cityOne withDestination:(NSString *)cityTwo{
     
-    return self.allFlights;
+    NSString* userLocation = self.userData.defaultLocation;
+    NSMutableArray *response = [[NSMutableArray alloc] init];
+    
+    for (Flight* flight in [self allFlights]){
+        
+        NSString* origin = [flight origin];
+        NSString* destination = [flight destination];
+        
+        if([origin isEqualToString:cityOne] && [origin isEqualToString:cityTwo]){
+            
+            //TODO check the date
+                
+            [response addObject:flight];
+            
+        }
+        
+    }
+    
+    return response;
     
 }
 

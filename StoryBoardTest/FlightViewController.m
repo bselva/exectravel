@@ -7,6 +7,7 @@
 //
 
 #import "FlightViewController.h"
+#import "Flow.h"
 
 @interface FlightViewController ()
 
@@ -18,7 +19,22 @@
     [super viewDidLoad];
     self.dateField.delegate = self;
     self.locationField.delegate = self;
-
+    
+    self.locationSourceArray =  [[NSMutableArray alloc]init];
+    
+    Flow* flow = [Flow sharedFlow];
+    
+    NSArray* allAirportsFiltered = [flow getUniqueAirportList];
+    for (Airport* airport in allAirportsFiltered){
+        NSLog(@"Added %@", [airport fullName]);
+        [self.locationSourceArray addObject:airport];
+    }
+    
+//            [self.locationSourceArray addObject:@"NYC"];
+//            [self.locationSourceArray addObject:@"LDN"];
+//            [self.locationSourceArray addObject:@"DBX"];
+//            [self.locationSourceArray addObject:@"LAX"];
+    
     // Do any additional setup after loading the view.
 }
 
@@ -55,21 +71,22 @@
     }
     else if((UITextField*)sender == self.locationField){
         
-        self.locationSourceArray =  [[NSMutableArray alloc]init];
-        
-        [self.locationSourceArray addObject:@"NYC"];
-        [self.locationSourceArray addObject:@"LDN"];
-        [self.locationSourceArray addObject:@"DBX"];
-        [self.locationSourceArray addObject:@"LAX"];
-        
-        CGRect framePickerView = CGRectMake(0, 250, CGRectGetWidth(self.view.frame),44);
-        self.locationPicker =[[[UIPickerView alloc]init] initWithFrame:framePickerView];
-        self.locationPicker.backgroundColor =[UIColor whiteColor];
-        self.locationPicker.showsSelectionIndicator = NO;
-        [self.view addSubview:self.locationPicker];
 
-        self.locationPicker.dataSource = self;
-        self.locationPicker.delegate = self;
+        
+        CGRect framePickerView = CGRectMake(self.view.frame.size.height, (self.view.frame.size.height*2)-22, CGRectGetWidth(self.view.frame),60);
+        UIPickerView *locationPicker =[[[UIPickerView alloc] init]initWithFrame:framePickerView];
+        
+        CGAffineTransform t0 = CGAffineTransformMakeTranslation (1.0, locationPicker.bounds.size.height);
+        CGAffineTransform s0 = CGAffineTransformMakeScale       (1.0, 0.5);
+        CGAffineTransform t1 = CGAffineTransformMakeTranslation (1, locationPicker.bounds.size.height);
+        locationPicker.transform = CGAffineTransformConcat    (t0, CGAffineTransformConcat(s0, t1));
+        
+        locationPicker.backgroundColor =[UIColor whiteColor];
+        [self.view addSubview:locationPicker];
+
+        locationPicker.dataSource = self;
+        locationPicker.delegate = self;
+
     }
 }
 
@@ -86,13 +103,21 @@ numberOfRowsInComponent:(NSInteger)component{
 
 -(void)pickerView:(UIPickerView *)pickerView didSelectRow:
 (NSInteger)row inComponent:(NSInteger)component{
-    [self.locationField setText:[self.locationSourceArray objectAtIndex:row]];
+    
+    NSString* destination = [[self.locationSourceArray objectAtIndex:row] fullName];
+    
+    [self.locationField setText:destination];
     
     [self.locationPicker performSelector:@selector(removeFromSuperview) withObject:nil afterDelay:0.5];
+    Flow* flow = [Flow sharedFlow];
+    [flow setSelectedDestination:destination];
+
+    
 }
+
 - (NSString *)pickerView:(UIPickerView *)pickerView titleForRow:
 (NSInteger)row forComponent:(NSInteger)component{
-    return [self.locationSourceArray objectAtIndex:row];
+    return [[self.locationSourceArray objectAtIndex:row] fullName];
 }
 
 - (IBAction)datePickerDone:(id)sender {
