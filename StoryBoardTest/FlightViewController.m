@@ -74,18 +74,18 @@
 
         
         CGRect framePickerView = CGRectMake(self.view.frame.size.height, (self.view.frame.size.height*2)-22, CGRectGetWidth(self.view.frame),60);
-        UIPickerView *locationPicker =[[[UIPickerView alloc] init]initWithFrame:framePickerView];
+        self.locationPicker =[[[UIPickerView alloc] init]initWithFrame:framePickerView];
         
-        CGAffineTransform t0 = CGAffineTransformMakeTranslation (1.0, locationPicker.bounds.size.height);
-        CGAffineTransform s0 = CGAffineTransformMakeScale       (1.0, 0.5);
-        CGAffineTransform t1 = CGAffineTransformMakeTranslation (1, locationPicker.bounds.size.height);
-        locationPicker.transform = CGAffineTransformConcat    (t0, CGAffineTransformConcat(s0, t1));
+        CGAffineTransform t0 = CGAffineTransformMakeTranslation (1.0, self.locationPicker.bounds.size.height/2);
+        CGAffineTransform s0 = CGAffineTransformMakeScale       (1.0, 1.0);
+        CGAffineTransform t1 = CGAffineTransformMakeTranslation (25, self.locationPicker.bounds.size.height/2);
+        self.locationPicker.transform = CGAffineTransformConcat    (t0, CGAffineTransformConcat(s0, t1));
         
-        locationPicker.backgroundColor =[UIColor whiteColor];
-        [self.view addSubview:locationPicker];
+        self.locationPicker.backgroundColor =[UIColor whiteColor];
+        [self.view addSubview:self.locationPicker];
 
-        locationPicker.dataSource = self;
-        locationPicker.delegate = self;
+        self.locationPicker.dataSource = self;
+        self.locationPicker.delegate = self;
 
     }
 }
@@ -107,12 +107,13 @@ numberOfRowsInComponent:(NSInteger)component{
     NSString* destination = [[self.locationSourceArray objectAtIndex:row] fullName];
     
     [self.locationField setText:destination];
-    
-    [self.locationPicker performSelector:@selector(removeFromSuperview) withObject:nil afterDelay:0.5];
+
     Flow* flow = [Flow sharedFlow];
     [flow setSelectedDestination:destination];
 
-    
+//    [self.locationField setText:[[self.locationSourceArray objectAtIndex:row] fullName]];
+
+    [self.locationPicker performSelector:@selector(removeFromSuperview) withObject:nil afterDelay:0.5];
 }
 
 - (NSString *)pickerView:(UIPickerView *)pickerView titleForRow:
