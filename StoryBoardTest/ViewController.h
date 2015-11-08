@@ -13,11 +13,7 @@
 @property (nonatomic,strong) IBOutlet UILabel *vouchersAvailabe;
 @property (nonatomic,strong) IBOutlet UILabel *headQuarters;
 
-@property(strong, nonatomic) UIActivityIndicatorView *activityView;
-@property(strong, nonatomic) UIView *overlay;
-
 - (IBAction)buttonTapped:(UIButton *)sender;
-- (void)hideActivityIndicator;
 
 @end
 
