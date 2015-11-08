@@ -553,6 +553,26 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="arrivalDate1" destination="uKY-77-kfj" id="Ogf-L4-QZE"/>
+                        <outlet property="arrivalDate2" destination="Ufm-Yb-Wtu" id="Jdp-4n-Mba"/>
+                        <outlet property="arrivalDate3" destination="8kT-yn-Y1e" id="e5Y-0k-y3G"/>
+                        <outlet property="arrivalTime1" destination="KGW-pP-wUR" id="R2c-cQ-Yin"/>
+                        <outlet property="arrivalTime2" destination="oRV-P0-S5S" id="RL5-WB-TZv"/>
+                        <outlet property="arrivalTime3" destination="eBP-Yi-hud" id="l8K-W7-6Pw"/>
+                        <outlet property="departureDate1" destination="2Et-4j-7hR" id="Veu-vQ-8B6"/>
+                        <outlet property="departureDate2" destination="2cS-d3-daQ" id="3zK-j4-Vau"/>
+                        <outlet property="departureDate3" destination="xZ5-sF-zAh" id="Fqm-rh-MBm"/>
+                        <outlet property="departureTime1" destination="zkL-la-4zY" id="fTw-nS-x1T"/>
+                        <outlet property="departureTime2" destination="h9O-5l-EUI" id="auH-Sx-GV0"/>
+                        <outlet property="departureTime3" destination="Ygy-Yh-Gpq" id="7J0-WO-Cel"/>
+                        <outlet property="flightNumber1" destination="p5s-qk-Bpd" id="qAG-JX-erC"/>
+                        <outlet property="flightNumber2" destination="TpE-qd-gdW" id="GyX-dg-5Ca"/>
+                        <outlet property="flightNumber3" destination="9Tw-kf-cI6" id="kL3-HL-UJO"/>
+                        <outlet property="seatAvailable1" destination="AHh-YA-VyV" id="6FP-ac-0qK"/>
+                        <outlet property="seatAvailable2" destination="MR3-5A-TYa" id="zjK-9K-0I7"/>
+                        <outlet property="seatAvailable3" destination="HY3-w9-HEC" id="a77-ZF-Onv"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Jyf-GT-yr8" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

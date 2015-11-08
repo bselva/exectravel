@@ -110,7 +110,7 @@ numberOfRowsInComponent:(NSInteger)component{
     
     [self.locationPicker performSelector:@selector(removeFromSuperview) withObject:nil afterDelay:0.5];
     Flow* flow = [Flow sharedFlow];
-    [flow setSelectedDestination:destination];
+    [flow setSelectedDestination:[[self.locationSourceArray objectAtIndex:row] iata]];
 
     
 }

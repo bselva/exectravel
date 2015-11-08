@@ -1,7 +1,7 @@
 {"results" : [
     {
        "origin": "SFO",
-       "destination": "DBX",
+       "destination": "DXB",
        "departureTime": "2015-11-09T09:01:00Z",
        "arrivalTime": "2015-11-10T08:15:00Z",
        "seat": "35",
@@ -19,7 +19,7 @@
        "howManyStops": "0" 
     }, {
        "origin": "LAS",
-       "destination": "DBX",
+       "destination": "DXB",
        "departureTime": "2015-11-09T15:01:00Z",
        "arrivalTime": "2015-11-10T18:15:00Z",
        "seat": "22",
@@ -35,6 +35,42 @@
        "priceInUS": "1700.50",
        "duration": "300",
        "howManyStops": "1" 
-    }
+              }, {
+              "origin": "SFO",
+              "destination": "DXB",
+              "departureTime": "2015-11-09T15:01:00Z",
+              "arrivalTime": "2015-11-10T18:15:00Z",
+              "seat": "22",
+              "seatCategory": "aisle",
+              "className": "economic",
+              "number": "EK240",
+              "aircraft": "Airbus Boeing 777",
+              "wifi": "true",
+              "inSeatUSB": "true",
+              "onDemandVideo": "true",
+              "streamToYourDevice": "true",
+              "inSeatPower": "true",
+              "priceInUS": "1700.50",
+              "duration": "300",
+              "howManyStops": "1" 
+              }, {
+              "origin": "SFO",
+              "destination": "DXB",
+              "departureTime": "2015-11-09T15:01:00Z",
+              "arrivalTime": "2015-11-10T18:15:00Z",
+              "seat": "22",
+              "seatCategory": "aisle",
+              "className": "economic",
+              "number": "EK240",
+              "aircraft": "Airbus Boeing 777",
+              "wifi": "true",
+              "inSeatUSB": "true",
+              "onDemandVideo": "true",
+              "streamToYourDevice": "true",
+              "inSeatPower": "true",
+              "priceInUS": "1700.50",
+              "duration": "300",
+              "howManyStops": "1" 
+              }
 ]
 }
