@@ -14,10 +14,19 @@
 @property NSString * destination;
 @property NSString * departureTime;
 @property NSString * arrivalTime;
-@property NSString * aircraft;
-@property NSString * duration;
 @property NSString * seat;
 @property NSString * className;
+@property NSString * number;
+@property NSString * aircraft;
+@property NSString * wifi;
+@property NSString * inSeatUSB;
+@property NSString * onDemandVideo;
+@property NSString * streamToYourDevice;
+@property NSString * inSeatPower;
+@property NSString * priceInUS;
+@property NSString * duration;
+@property NSString * howManyStops;
+
 @end
 
 @interface Airport:NSObject
@@ -30,8 +39,8 @@
 @end
 
 @interface Voucher:NSObject
-@property NSString * iataOrigin;
-@property NSString * iataDestination;
+@property NSString * origin;
+@property NSString * destination;
 @end
     
 #endif /* dao_h */

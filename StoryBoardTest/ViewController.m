@@ -9,6 +9,8 @@
 #import "ViewController.h"
 #import "dao.h"
 #import "airport_builder.h"
+#import "flight_builder.h"
+#import "voucher_builder.h"
 
 @interface ViewController ()
 
@@ -25,46 +27,49 @@
 
 
 - (IBAction)buttonTapped:(UIButton *)sender{
-    //[self loadData];
+    [self loadData];
     
 }
 
 - (void)loadData{
     
-    //NSArray *airports =  [NSArray arrayWithObjects:@"Eezy",@"Tutorials"];
-    
-    // Read JSON data into array
     NSError *error;
-    NSString *jsonPath = [[NSBundle mainBundle] pathForResource:@"airports" ofType:@"json"];
-    NSData *jsonData = [NSData dataWithContentsOfFile:jsonPath];
+    NSArray* airports = [AirportBuilder airportsFromJSON:[AirportBuilder readJSONFile] error:error];
     
-    if (jsonData == nil) {
-        // handle error ...
-    }
-    
-    NSArray* airports = [AirportBuilder airportsFromJSON:jsonData error:error];
     //
-    //    for (id airport in airports){
-    //        NSLog(@"%@",airport);
-    //    }
-    
-    
-    NSMutableArray *myArray = [NSMutableArray array];
-    
-    for(int i = 0; i < 10; i++) {
-        
-        Flight *flight = [[Flight alloc] init];
-        flight.origin = @"Ben";
-        flight.destination = @"Ben";
-        flight.destination = @"Ben";
-        flight.destination = @"Ben";
-        flight.destination = @"Ben";
-        flight.destination = @"Ben";
-        [myArray addObject:flight];
+    for (id airport in airports){
+        NSLog(@"%@",[airport fullName]);
     }
     
-    NSLog(@"myArray:\n%@", myArray);
+    NSArray* vouchers = [VoucherBuilder vouchers];
     
+    
+    for (id voucher in vouchers){
+        NSLog(@"%@",[voucher destination]);
+    }
+    
+    NSArray* flights = [FlightBuilder flightsFromJSON:[FlightBuilder readJSONFile] error:error];
+    
+    //for (id flight in flights){
+    //    NSLog(@"%@",[flight destination]);
+    //}
+    
+//    NSMutableArray *myArray = [NSMutableArray array];
+//    
+//    for(int i = 0; i < 10; i++) {
+//        
+//        Flight *flight = [[Flight alloc] init];
+//        flight.origin = @"Ben";
+//        flight.destination = @"Ben";
+//        flight.destination = @"Ben";
+//        flight.destination = @"Ben";
+//        flight.destination = @"Ben";
+//        flight.destination = @"Ben";
+//        [myArray addObject:flight];
+//    }
+//    
+//    NSLog(@"myArray:\n%@", myArray);
+//    
     
 }
 

@@ -1,14 +1,17 @@
 //
-//  SelectFlightViewController.h
+//  airports_builder.m
 //  ExecTravel
 //
 //  Created by Wellington Soares on 11/7/15.
 //  Copyright © 2015 livani. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
+#import <Foundation/Foundation.h>
 
-@interface SelectFlightViewController : UIViewController
 
+@interface VoucherBuilder : NSObject
+
+
++ (NSArray *)vouchers;
 
 @end

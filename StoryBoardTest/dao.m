@@ -11,7 +11,7 @@
 #import "dao.h"
 
 @implementation Flight
-@synthesize origin, destination, departureTime, arrivalTime, aircraft, duration, seat, className;
+@synthesize origin, destination, departureTime, arrivalTime, seat, className, number, aircraft, wifi, inSeatUSB, onDemandVideo, streamToYourDevice, inSeatPower, priceInUS, duration, howManyStops;
 
 - (void) dealloc {
     //[self prop1:nil];
@@ -23,7 +23,7 @@
 @synthesize lat, lon, name, continent, iata;
 
 - (NSString *) fullName {
-    return [NSString stringWithFormat:@"%@ %@", [self iata], [self name]];
+    return [NSString stringWithFormat:@"%@ - %@", [self iata], [self name]];
 }
 
 - (void) dealloc {
@@ -33,7 +33,7 @@
 @end
 
 @implementation Voucher
-@synthesize iataOrigin, iataDestination;
+@synthesize origin, destination;
 
 - (void) dealloc {
     //[super dealloc];
