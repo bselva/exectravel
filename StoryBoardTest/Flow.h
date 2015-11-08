@@ -18,6 +18,11 @@
 @property   NSArray *allAirports;
 @property   NSArray *allVouchers;
 @property   UserData *userData;
+@property   NSDictionary* indexedAirports;
+
+@property   NSDate* selectedDate;
+@property   NSString* selectedDestination;
+@property   Flight* selectedFlight;
 
 
 + (id)sharedFlow;

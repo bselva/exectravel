@@ -31,9 +31,11 @@
 
 - (void)awakeFromNib{
     
-    NSLog(@"The application Starts");
+    NSLog(@"The first view starts");
     Flow* flow = [Flow sharedFlow];
-    
+    UserData* a = [flow getUserData];
+    //NSLog(@"TESTE %@", a.defaultLocation);
+    self.headQuarters.text = a.defaultLocation;
 }
 
 

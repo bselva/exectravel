@@ -29,7 +29,7 @@
 
 @end
 
-@interface Airport:NSObject
+@interface Airport: NSObject
 @property NSString * lat;
 @property NSString * lon;
 @property NSString * name;

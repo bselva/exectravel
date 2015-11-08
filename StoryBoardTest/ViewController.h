@@ -9,8 +9,9 @@
 #import <UIKit/UIKit.h>
 
 @interface ViewController : UIViewController
-- (IBAction)buttonTapped:(UIButton *)sender;
 
+@property (nonatomic,strong) IBOutlet UILabel *vouchersAvailabe;
+@property (nonatomic,strong) IBOutlet UILabel *headQuarters;
 
 @end
 

@@ -7,6 +7,7 @@
 //
 
 #import "FlightViewController.h"
+#import "Flow.h"
 
 @interface FlightViewController ()
 
@@ -18,7 +19,22 @@
     [super viewDidLoad];
     self.dateField.delegate = self;
     self.locationField.delegate = self;
-
+    
+    self.locationSourceArray =  [[NSMutableArray alloc]init];
+    
+    Flow* flow = [Flow sharedFlow];
+    
+    NSArray* allAirportsFiltered = [flow getUniqueAirportList];
+    for (Airport* airport in allAirportsFiltered){
+        NSLog(@"Added %@", [airport fullName]);
+        [self.locationSourceArray addObject:airport];
+    }
+    
+//            [self.locationSourceArray addObject:@"NYC"];
+//            [self.locationSourceArray addObject:@"LDN"];
+//            [self.locationSourceArray addObject:@"DBX"];
+//            [self.locationSourceArray addObject:@"LAX"];
+    
     // Do any additional setup after loading the view.
 }
 
@@ -58,12 +74,7 @@
     }
     else if((UITextField*)sender == self.locationField){
         
-        self.locationSourceArray =  [[NSMutableArray alloc]init];
         
-        [self.locationSourceArray addObject:@"NYC"];
-        [self.locationSourceArray addObject:@"LDN"];
-        [self.locationSourceArray addObject:@"DBX"];
-        [self.locationSourceArray addObject:@"LAX"];
         
         CGRect framePickerView = CGRectMake(self.view.frame.size.height, (self.view.frame.size.height*2)-22, CGRectGetWidth(self.view.frame),44);
         UIPickerView *locationPicker =[[[UIPickerView alloc]init] initWithFrame:framePickerView];
@@ -88,11 +99,18 @@ numberOfRowsInComponent:(NSInteger)component{
 
 -(void)pickerView:(UIPickerView *)pickerView didSelectRow:
 (NSInteger)row inComponent:(NSInteger)component{
-    [self.locationField setText:[self.locationSourceArray objectAtIndex:row]];
+    
+    NSString* destination = [[self.locationSourceArray objectAtIndex:row] fullName];
+    
+    [self.locationField setText:destination];
+    
+    Flow* flow = [Flow sharedFlow];
+    [flow setSelectedDestination:destination];
 }
+
 - (NSString *)pickerView:(UIPickerView *)pickerView titleForRow:
 (NSInteger)row forComponent:(NSInteger)component{
-    return [self.locationSourceArray objectAtIndex:row];
+    return [[self.locationSourceArray objectAtIndex:row] fullName];
 }
 
 - (IBAction)datePickerDone:(id)sender {
