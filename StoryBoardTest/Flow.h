@@ -25,6 +25,10 @@
 @property   Flight* selectedFlight;
 
 
+
++ (NSString *) dateFromISO8601StringDate:(NSString *)dateString;
++ (NSString *) dateFromISO8601StringTime:(NSString *)dateString;
+
 + (id)sharedFlow;
 - (void)loadUserPreferences;
 - (void)loadVouchers;

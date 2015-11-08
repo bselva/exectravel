@@ -16,6 +16,51 @@
 @synthesize  allFlights, allAirports, allVouchers, userData;
 
 
+
++ (NSString *) dateFromISO8601StringDate:(NSString *)dateString{
+    
+    if (!dateString) return @"-";
+    
+    if ([dateString hasSuffix:@"Z"]) {
+        dateString = [[dateString substringToIndex:(dateString.length-1)] stringByAppendingString:@"-0000"];
+    }
+    
+    dateString = [dateString stringByReplacingOccurrencesOfString:@":" withString:@""];
+    NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
+    dateFormatter.dateFormat = @"yyyy-MM-dd'T'HHmmssZ";
+    NSDate* date = [dateFormatter dateFromString:dateString];
+    
+    
+    NSDateFormatter *formatter2;
+    formatter2 = [[NSDateFormatter alloc] init];
+    [formatter2 setDateFormat:@"YY-MM-dd"];
+    
+    return [formatter2 stringFromDate:date];
+}
+
++ (NSString *) dateFromISO8601StringTime:(NSString *)dateString{
+    
+    if (!dateString) return @"-";
+    
+    if ([dateString hasSuffix:@"Z"]) {
+        dateString = [[dateString substringToIndex:(dateString.length-1)] stringByAppendingString:@"-0000"];
+    }
+    
+    dateString = [dateString stringByReplacingOccurrencesOfString:@":" withString:@""];
+    NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
+    dateFormatter.dateFormat = @"yyyy-MM-dd'T'HHmmssZ";
+    NSDate* date = [dateFormatter dateFromString:dateString];
+    
+    
+    NSDateFormatter *formatter2;
+    formatter2 = [[NSDateFormatter alloc] init];
+    [formatter2 setDateFormat:@"HH:mm"];
+    
+    return [formatter2 stringFromDate:date];
+    
+}
+
+
 + (id)sharedFlow {
     static Flow *sharedFlow = nil;
     @synchronized(self) {

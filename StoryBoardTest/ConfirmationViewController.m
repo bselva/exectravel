@@ -69,11 +69,11 @@
     [self.from setText:f.origin];
     [self.to setText:f.destination];
     
-    [self.departureDate setText:f.departureTime];
-    [self.departureTime setText:f.departureTime];
+    [self.departureDate setText:[Flow dateFromISO8601StringDate:f.departureTime]];
+    [self.departureTime setText:[Flow dateFromISO8601StringTime:f.departureTime]];
     
-    [self.arrivalDate setText:f.arrivalTime];
-    [self.arrivalDate setText:f.arrivalTime];
+    [self.arrivalDate setText:[Flow dateFromISO8601StringDate:f.arrivalTime]];
+    [self.arrivalDate setText:[Flow dateFromISO8601StringTime:f.arrivalTime]];
     
     [self.seat setText:f.seat];
     

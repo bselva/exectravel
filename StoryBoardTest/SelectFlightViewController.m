@@ -84,24 +84,24 @@
         
         if(itensProcessed == 0){
             [self.flightNumber1 setText:flight.number];
-            [self.departureDate1 setText:flight.departureTime];
-            [self.departureTime1 setText:flight.departureTime];
-            [self.arrivalDate1 setText:flight.arrivalTime];
-            [self.arrivalTime1 setText:flight.arrivalTime];
+            [self.departureDate1 setText:[Flow dateFromISO8601StringDate:flight.departureTime]];
+            [self.departureTime1 setText:[Flow dateFromISO8601StringTime:flight.departureTime]];
+            [self.arrivalDate1 setText:[Flow dateFromISO8601StringDate:flight.arrivalTime]];
+            [self.arrivalTime1 setText:[Flow dateFromISO8601StringTime:flight.arrivalTime]];
             [self.seatAvailable1 setText:flight.seat];
         }else if(itensProcessed==1){
             [self.flightNumber2 setText:flight.number];
-            [self.departureDate2 setText:flight.departureTime];
-            [self.departureTime2 setText:flight.departureTime];
-            [self.arrivalDate2 setText:flight.arrivalTime];
-            [self.arrivalTime2 setText:flight.arrivalTime];
+            [self.departureDate2 setText:[Flow dateFromISO8601StringDate:flight.departureTime]];
+            [self.departureTime2 setText:[Flow dateFromISO8601StringTime:flight.departureTime]];
+            [self.arrivalDate2 setText:[Flow dateFromISO8601StringDate:flight.arrivalTime]];
+            [self.arrivalTime2 setText:[Flow dateFromISO8601StringTime:flight.arrivalTime]];
             [self.seatAvailable2 setText:flight.seat];
         }else if(itensProcessed==2){
             [self.flightNumber3 setText:flight.number];
-            [self.departureDate3 setText:flight.departureTime];
-            [self.departureTime3 setText:flight.departureTime];
-            [self.arrivalDate3 setText:flight.arrivalTime];
-            [self.arrivalTime3 setText:flight.arrivalTime];
+            [self.departureDate3 setText:[Flow dateFromISO8601StringDate:flight.departureTime]];
+            [self.departureTime3 setText:[Flow dateFromISO8601StringTime:flight.departureTime]];
+            [self.arrivalDate3 setText:[Flow dateFromISO8601StringDate:flight.arrivalTime]];
+            [self.arrivalTime3 setText:[Flow dateFromISO8601StringTime:flight.arrivalTime]];
             [self.seatAvailable3 setText:flight.seat];
         }
         
