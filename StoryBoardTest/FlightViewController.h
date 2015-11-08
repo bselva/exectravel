@@ -16,6 +16,8 @@
 
 @property (nonatomic,weak) IBOutlet UITextField *locationField;
 
+@property (nonatomic,strong) IBOutlet UIPickerView *locationPicker;
+
 @property(nonatomic, strong) NSMutableArray *locationSourceArray;
 
 @end

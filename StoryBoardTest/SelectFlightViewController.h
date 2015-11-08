@@ -10,6 +10,9 @@
 
 @interface SelectFlightViewController : UIViewController
 
+@property(strong, nonatomic) UIActivityIndicatorView *activityView;
+@property(strong, nonatomic) UIView *overlay;
+
 @property (nonatomic,strong) IBOutlet UILabel *flightNumber1;
 @property (nonatomic,strong) IBOutlet UILabel *departureDate1;
 @property (nonatomic,strong) IBOutlet UILabel *departureTime1;
@@ -30,5 +33,8 @@
 @property (nonatomic,strong) IBOutlet UILabel *arrivalDate3;
 @property (nonatomic,strong) IBOutlet UILabel *arrivalTime3;
 @property (nonatomic,strong) IBOutlet UILabel *seatAvailable3;
+
+- (void)hideActivityIndicator;
+
 
 @end

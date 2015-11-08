@@ -38,9 +38,6 @@
     // Do any additional setup after loading the view.
 }
 
-
-
-
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
@@ -74,15 +71,32 @@
     }
     else if((UITextField*)sender == self.locationField){
         
+<<<<<<< HEAD
         
+=======
+        self.locationSourceArray =  [[NSMutableArray alloc]init];
+
+        [self.locationSourceArray addObject:@"SFO"];
+        [self.locationSourceArray addObject:@"NYC"];
+        [self.locationSourceArray addObject:@"LDN"];
+        [self.locationSourceArray addObject:@"DBX"];
+        [self.locationSourceArray addObject:@"LAX"];
+>>>>>>> d36d8a5e8f3424553d06ca18ac7e75fcc4186320
         
-        CGRect framePickerView = CGRectMake(self.view.frame.size.height, (self.view.frame.size.height*2)-22, CGRectGetWidth(self.view.frame),44);
-        UIPickerView *locationPicker =[[[UIPickerView alloc]init] initWithFrame:framePickerView];
+        CGRect framePickerView = CGRectMake(self.view.frame.size.height, (self.view.frame.size.height*2)-22, CGRectGetWidth(self.view.frame),60);
+        UIPickerView *locationPicker =[[[UIPickerView alloc] init]initWithFrame:framePickerView];
+        
+        CGAffineTransform t0 = CGAffineTransformMakeTranslation (1.0, locationPicker.bounds.size.height);
+        CGAffineTransform s0 = CGAffineTransformMakeScale       (1.0, 0.5);
+        CGAffineTransform t1 = CGAffineTransformMakeTranslation (1, locationPicker.bounds.size.height);
+        locationPicker.transform = CGAffineTransformConcat    (t0, CGAffineTransformConcat(s0, t1));
+        
         locationPicker.backgroundColor =[UIColor whiteColor];
         [self.view addSubview:locationPicker];
 
         locationPicker.dataSource = self;
         locationPicker.delegate = self;
+
     }
 }
 
@@ -104,8 +118,11 @@ numberOfRowsInComponent:(NSInteger)component{
     
     [self.locationField setText:destination];
     
+    [self.locationPicker performSelector:@selector(removeFromSuperview) withObject:nil afterDelay:0.5];
     Flow* flow = [Flow sharedFlow];
     [flow setSelectedDestination:destination];
+
+    
 }
 
 - (NSString *)pickerView:(UIPickerView *)pickerView titleForRow:
@@ -120,20 +137,12 @@ numberOfRowsInComponent:(NSInteger)component{
 
 -(void)updateTextField:(id)sender
 {
-    if((UITextField*)sender == self.dateField)
-    {
-        UIDatePicker *picker = (UIDatePicker*)self.dateField.inputView;
+    UIDatePicker *picker = (UIDatePicker*)self.dateField.inputView;
     
-        NSDateFormatter *dateFormat = [[NSDateFormatter alloc] init];
-        [dateFormat setDateFormat:@"MMM d yyyy HH:mm a"];
-        self.dateField.text =  [dateFormat stringFromDate:picker.date];
-    }
+    NSDateFormatter *dateFormat = [[NSDateFormatter alloc] init];
+    [dateFormat setDateFormat:@"MMM d yyyy HH:mm a"];
+    self.dateField.text =  [dateFormat stringFromDate:picker.date];
 }
-
--(IBAction)locationPickerDone:(id)sender{
-    [self.locationField setHidden:true];
-}
-
 
 /*
 #pragma mark - Navigation
