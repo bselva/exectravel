@@ -9,8 +9,12 @@
 #import <UIKit/UIKit.h>
 
 @interface ViewController : UIViewController
-- (IBAction)buttonTapped:(UIButton *)sender;
 
+@property(strong, nonatomic) UIActivityIndicatorView *activityView;
+@property(strong, nonatomic) UIView *overlay;
+
+- (IBAction)buttonTapped:(UIButton *)sender;
+- (void)hideActivityIndicator;
 
 @end
 

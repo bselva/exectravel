@@ -10,4 +10,10 @@
 
 @interface SelectFlightViewController : UIViewController
 
+@property(strong, nonatomic) UIActivityIndicatorView *activityView;
+@property(strong, nonatomic) UIView *overlay;
+
+- (void)hideActivityIndicator;
+
+
 @end

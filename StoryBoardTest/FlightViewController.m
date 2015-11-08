@@ -22,9 +22,6 @@
     // Do any additional setup after loading the view.
 }
 
-
-
-
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
@@ -65,13 +62,14 @@
         [self.locationSourceArray addObject:@"DBX"];
         [self.locationSourceArray addObject:@"LAX"];
         
-        CGRect framePickerView = CGRectMake(self.view.frame.size.height, (self.view.frame.size.height*2)-22, CGRectGetWidth(self.view.frame),44);
-        UIPickerView *locationPicker =[[[UIPickerView alloc]init] initWithFrame:framePickerView];
-        locationPicker.backgroundColor =[UIColor whiteColor];
-        [self.view addSubview:locationPicker];
+        CGRect framePickerView = CGRectMake(0, 250, CGRectGetWidth(self.view.frame),44);
+        self.locationPicker =[[[UIPickerView alloc]init] initWithFrame:framePickerView];
+        self.locationPicker.backgroundColor =[UIColor whiteColor];
+        self.locationPicker.showsSelectionIndicator = NO;
+        [self.view addSubview:self.locationPicker];
 
-        locationPicker.dataSource = self;
-        locationPicker.delegate = self;
+        self.locationPicker.dataSource = self;
+        self.locationPicker.delegate = self;
     }
 }
 
@@ -89,6 +87,8 @@ numberOfRowsInComponent:(NSInteger)component{
 -(void)pickerView:(UIPickerView *)pickerView didSelectRow:
 (NSInteger)row inComponent:(NSInteger)component{
     [self.locationField setText:[self.locationSourceArray objectAtIndex:row]];
+    
+    [self.locationPicker performSelector:@selector(removeFromSuperview) withObject:nil afterDelay:0.5];
 }
 - (NSString *)pickerView:(UIPickerView *)pickerView titleForRow:
 (NSInteger)row forComponent:(NSInteger)component{
@@ -110,7 +110,6 @@ numberOfRowsInComponent:(NSInteger)component{
 }
 
 -(IBAction)locationPickerDone:(id)sender{
-    
 }
 
 
