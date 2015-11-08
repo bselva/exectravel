@@ -39,3 +39,13 @@
     //[super dealloc];
 }
 @end
+
+
+@implementation UserData
+@synthesize preferedSeat, name, defaultLocation;
+
+- (void) dealloc {
+    //[super dealloc];
+}
+@end
+

@@ -12,6 +12,9 @@
 		3FFDEC9E1BEEF7140051B4CE /* flight_builder.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FFDEC9B1BEEF7140051B4CE /* flight_builder.m */; settings = {ASSET_TAGS = (); }; };
 		3FFDECA01BEEF7700051B4CE /* dao.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FFDEC9F1BEEF7700051B4CE /* dao.m */; settings = {ASSET_TAGS = (); }; };
 		3FFDECA31BEEFE900051B4CE /* SelectFlightViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FFDECA21BEEFE900051B4CE /* SelectFlightViewController.m */; settings = {ASSET_TAGS = (); }; };
+		3FFDECA61BEF181B0051B4CE /* flights.json in Resources */ = {isa = PBXBuildFile; fileRef = 3FFDECA51BEF181B0051B4CE /* flights.json */; settings = {ASSET_TAGS = (); }; };
+		3FFDECA91BEF1C720051B4CE /* voucher_builder.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FFDECA81BEF1C720051B4CE /* voucher_builder.m */; settings = {ASSET_TAGS = (); }; };
+		3FFDECAC1BEF29B70051B4CE /* Flow.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FFDECAB1BEF29B70051B4CE /* Flow.m */; settings = {ASSET_TAGS = (); }; };
 		7B36BB171BEE797800EF67D3 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B36BB161BEE797800EF67D3 /* main.m */; };
 		7B36BB1A1BEE797800EF67D3 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B36BB191BEE797800EF67D3 /* AppDelegate.m */; };
 		7B36BB1D1BEE797800EF67D3 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B36BB1C1BEE797800EF67D3 /* ViewController.m */; };
@@ -53,6 +56,12 @@
 		3FFDEC9F1BEEF7700051B4CE /* dao.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = dao.m; sourceTree = "<group>"; };
 		3FFDECA11BEEFE900051B4CE /* SelectFlightViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SelectFlightViewController.h; sourceTree = "<group>"; };
 		3FFDECA21BEEFE900051B4CE /* SelectFlightViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SelectFlightViewController.m; sourceTree = "<group>"; };
+		3FFDECA41BEF122B0051B4CE /* flight_builder.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = flight_builder.h; sourceTree = "<group>"; };
+		3FFDECA51BEF181B0051B4CE /* flights.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = flights.json; sourceTree = "<group>"; };
+		3FFDECA71BEF1C720051B4CE /* voucher_builder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = voucher_builder.h; sourceTree = "<group>"; };
+		3FFDECA81BEF1C720051B4CE /* voucher_builder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = voucher_builder.m; sourceTree = "<group>"; };
+		3FFDECAA1BEF29B70051B4CE /* Flow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Flow.h; path = ../Flow.h; sourceTree = "<group>"; };
+		3FFDECAB1BEF29B70051B4CE /* Flow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Flow.m; path = ../Flow.m; sourceTree = "<group>"; };
 		7B36BB121BEE797800EF67D3 /* ExecTravel.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ExecTravel.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7B36BB161BEE797800EF67D3 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		7B36BB181BEE797800EF67D3 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -125,6 +134,8 @@
 		7B36BB141BEE797800EF67D3 /* StoryBoardTest */ = {
 			isa = PBXGroup;
 			children = (
+				3FFDECAA1BEF29B70051B4CE /* Flow.h */,
+				3FFDECAB1BEF29B70051B4CE /* Flow.m */,
 				7B36BB181BEE797800EF67D3 /* AppDelegate.h */,
 				7B36BB191BEE797800EF67D3 /* AppDelegate.m */,
 				7B36BB1B1BEE797800EF67D3 /* ViewController.h */,
@@ -139,9 +150,13 @@
 				7B36BB531BEEC0D500EF67D3 /* FlightViewController.m */,
 				3FFDEC971BEEF7140051B4CE /* airport_builder.h */,
 				3FFDEC981BEEF7140051B4CE /* airport_builder.m */,
+				3FFDECA71BEF1C720051B4CE /* voucher_builder.h */,
+				3FFDECA81BEF1C720051B4CE /* voucher_builder.m */,
 				3FFDEC991BEEF7140051B4CE /* airports.json */,
+				3FFDECA51BEF181B0051B4CE /* flights.json */,
 				3FFDEC9F1BEEF7700051B4CE /* dao.m */,
 				3FFDEC9A1BEEF7140051B4CE /* dao.h */,
+				3FFDECA41BEF122B0051B4CE /* flight_builder.h */,
 				3FFDEC9B1BEEF7140051B4CE /* flight_builder.m */,
 				3FFDECA11BEEFE900051B4CE /* SelectFlightViewController.h */,
 				3FFDECA21BEEFE900051B4CE /* SelectFlightViewController.m */,
@@ -295,6 +310,7 @@
 				7B36BB251BEE797800EF67D3 /* LaunchScreen.storyboard in Resources */,
 				7B36BB4F1BEE863B00EF67D3 /* 01_index_bg.png in Resources */,
 				7B36BB4D1BEE863B00EF67D3 /* 00_splash_bg.png in Resources */,
+				3FFDECA61BEF181B0051B4CE /* flights.json in Resources */,
 				7B36BB221BEE797800EF67D3 /* Assets.xcassets in Resources */,
 				7B36BB501BEE863B00EF67D3 /* 01_index_header.png in Resources */,
 				7B36BB201BEE797800EF67D3 /* Main.storyboard in Resources */,
@@ -324,8 +340,10 @@
 			files = (
 				7B36BB1D1BEE797800EF67D3 /* ViewController.m in Sources */,
 				3FFDECA01BEEF7700051B4CE /* dao.m in Sources */,
+				3FFDECA91BEF1C720051B4CE /* voucher_builder.m in Sources */,
 				7B36BB1A1BEE797800EF67D3 /* AppDelegate.m in Sources */,
 				7B36BB541BEEC0D500EF67D3 /* FlightViewController.m in Sources */,
+				3FFDECAC1BEF29B70051B4CE /* Flow.m in Sources */,
 				3FFDECA31BEEFE900051B4CE /* SelectFlightViewController.m in Sources */,
 				3FFDEC9E1BEEF7140051B4CE /* flight_builder.m in Sources */,
 				7B36BB171BEE797800EF67D3 /* main.m in Sources */,

@@ -42,5 +42,11 @@
 @property NSString * origin;
 @property NSString * destination;
 @end
-    
+
+@interface UserData:NSObject
+@property NSString * preferedSeat;
+@property NSString * name;
+@property NSString * defaultLocation;
+@end
+
 #endif /* dao_h */
