@@ -23,10 +23,10 @@
     
 }
 
-- (IBAction)buttonTapped:(UIButton *)sender
-{
-    NSLog(@"Button Tapped!");
-    [self loadData];
+
+- (IBAction)buttonTapped:(UIButton *)sender{
+    //[self loadData];
+    
 }
 
 - (void)loadData{
