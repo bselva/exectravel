@@ -102,14 +102,11 @@ numberOfRowsInComponent:(NSInteger)component{
 
 -(void)updateTextField:(id)sender
 {
-    if((UITextField*)sender == self.dateField)
-    {
-        UIDatePicker *picker = (UIDatePicker*)self.dateField.inputView;
+    UIDatePicker *picker = (UIDatePicker*)self.dateField.inputView;
     
-        NSDateFormatter *dateFormat = [[NSDateFormatter alloc] init];
-        [dateFormat setDateFormat:@"MMM d yyyy HH:mm a"];
-        self.dateField.text =  [dateFormat stringFromDate:picker.date];
-    }
+    NSDateFormatter *dateFormat = [[NSDateFormatter alloc] init];
+    [dateFormat setDateFormat:@"MMM d yyyy HH:mm a"];
+    self.dateField.text =  [dateFormat stringFromDate:picker.date];
 }
 
 /*
