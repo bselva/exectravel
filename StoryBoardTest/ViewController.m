@@ -7,8 +7,7 @@
 //
 
 #import "ViewController.h"
-#import "dao.h"
-#import "airport_builder.h"
+#import "flow.h"
 
 @interface ViewController ()
 
@@ -45,48 +44,19 @@
 
 
 - (IBAction)buttonTapped:(UIButton *)sender{
-    //[self loadData];
+   
+    NSLog(@"Button Tapped");
     
 }
 
-- (void)loadData{
+- (void)awakeFromNib{
     
-    //NSArray *airports =  [NSArray arrayWithObjects:@"Eezy",@"Tutorials"];
-    
-    // Read JSON data into array
-    NSError *error;
-    NSString *jsonPath = [[NSBundle mainBundle] pathForResource:@"airports" ofType:@"json"];
-    NSData *jsonData = [NSData dataWithContentsOfFile:jsonPath];
-    
-    if (jsonData == nil) {
-        // handle error ...
-    }
-    
-    NSArray* airports = [AirportBuilder airportsFromJSON:jsonData error:error];
-    //
-    //    for (id airport in airports){
-    //        NSLog(@"%@",airport);
-    //    }
-    
-    
-    NSMutableArray *myArray = [NSMutableArray array];
-    
-    for(int i = 0; i < 10; i++) {
-        
-        Flight *flight = [[Flight alloc] init];
-        flight.origin = @"Ben";
-        flight.destination = @"Ben";
-        flight.destination = @"Ben";
-        flight.destination = @"Ben";
-        flight.destination = @"Ben";
-        flight.destination = @"Ben";
-        [myArray addObject:flight];
-    }
-    
-    NSLog(@"myArray:\n%@", myArray);
-    
+    NSLog(@"The application Starts");
+    Flow* flow = [Flow sharedFlow];
     
 }
+
+
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];

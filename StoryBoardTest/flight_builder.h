@@ -1,5 +1,5 @@
 //
-//  airports_builder.m
+//  flight_builder.m
 //  ExecTravel
 //
 //  Created by Wellington Soares on 11/7/15.
@@ -8,11 +8,10 @@
 
 #import <Foundation/Foundation.h>
 
-
-@interface AirportBuilder : NSObject
+@interface FlightBuilder : NSObject
 
 + (NSData *)readJSONFile;
 
-+ (NSArray *)airportsFromJSON:(NSData *)objectNotation error:(NSError *)error;
++ (NSArray *)flightsFromJSON:(NSData *)objectNotation error:(NSError *)error;
 
 @end

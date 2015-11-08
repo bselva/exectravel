@@ -11,6 +11,22 @@
 #import "dao.h"
 
 @implementation AirportBuilder
+
+
++ (NSData *)readJSONFile{
+    
+    // Read JSON data into array
+    NSString *jsonPath = [[NSBundle mainBundle] pathForResource:@"airports" ofType:@"json"];
+    NSData *jsonData = [NSData dataWithContentsOfFile:jsonPath];
+    
+    if (jsonData == nil) {
+        // handle error ...
+    }
+    
+    return jsonData;
+}
+
+
 + (NSArray *)airportsFromJSON:(NSData *)objectNotation error:(NSError *)error{
     
     NSError *localError = nil;
@@ -31,7 +47,7 @@
         
         for (NSString *key in airportDic) {
             if ([airportTemp respondsToSelector:NSSelectorFromString(key)]) {
-                [airportTemp setValue:[airportTemp valueForKey:key] forKey:key];
+                [airportTemp setValue:[airportDic valueForKey:key] forKey:key];
             }
         }
         
