@@ -19,6 +19,7 @@
 		7B36BB4E1BEE863B00EF67D3 /* 00_splash_emirates_logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 7B36BB4A1BEE863B00EF67D3 /* 00_splash_emirates_logo.png */; };
 		7B36BB4F1BEE863B00EF67D3 /* 01_index_bg.png in Resources */ = {isa = PBXBuildFile; fileRef = 7B36BB4B1BEE863B00EF67D3 /* 01_index_bg.png */; };
 		7B36BB501BEE863B00EF67D3 /* 01_index_header.png in Resources */ = {isa = PBXBuildFile; fileRef = 7B36BB4C1BEE863B00EF67D3 /* 01_index_header.png */; };
+		7B36BB541BEEC0D500EF67D3 /* FlightViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B36BB531BEEC0D500EF67D3 /* FlightViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,6 +60,8 @@
 		7B36BB4A1BEE863B00EF67D3 /* 00_splash_emirates_logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 00_splash_emirates_logo.png; sourceTree = "<group>"; };
 		7B36BB4B1BEE863B00EF67D3 /* 01_index_bg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 01_index_bg.png; sourceTree = "<group>"; };
 		7B36BB4C1BEE863B00EF67D3 /* 01_index_header.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 01_index_header.png; sourceTree = "<group>"; };
+		7B36BB521BEEC0D500EF67D3 /* FlightViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FlightViewController.h; sourceTree = "<group>"; };
+		7B36BB531BEEC0D500EF67D3 /* FlightViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FlightViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -119,6 +122,8 @@
 				7B36BB231BEE797800EF67D3 /* LaunchScreen.storyboard */,
 				7B36BB261BEE797800EF67D3 /* Info.plist */,
 				7B36BB151BEE797800EF67D3 /* Supporting Files */,
+				7B36BB521BEEC0D500EF67D3 /* FlightViewController.h */,
+				7B36BB531BEEC0D500EF67D3 /* FlightViewController.m */,
 			);
 			path = StoryBoardTest;
 			sourceTree = "<group>";
@@ -296,6 +301,7 @@
 			files = (
 				7B36BB1D1BEE797800EF67D3 /* ViewController.m in Sources */,
 				7B36BB1A1BEE797800EF67D3 /* AppDelegate.m in Sources */,
+				7B36BB541BEEC0D500EF67D3 /* FlightViewController.m in Sources */,
 				7B36BB171BEE797800EF67D3 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -522,6 +528,7 @@
 				7B36BB411BEE797800EF67D3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		7B36BB421BEE797800EF67D3 /* Build configuration list for PBXNativeTarget "ExecTravelTests" */ = {
 			isa = XCConfigurationList;
@@ -530,6 +537,7 @@
 				7B36BB441BEE797800EF67D3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		7B36BB451BEE797800EF67D3 /* Build configuration list for PBXNativeTarget "ExecTravelUITests" */ = {
 			isa = XCConfigurationList;
@@ -538,6 +546,7 @@
 				7B36BB471BEE797800EF67D3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
