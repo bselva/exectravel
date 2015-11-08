@@ -59,14 +59,21 @@
     else if((UITextField*)sender == self.locationField){
         
         self.locationSourceArray =  [[NSMutableArray alloc]init];
-        
+
+        [self.locationSourceArray addObject:@"SFO"];
         [self.locationSourceArray addObject:@"NYC"];
         [self.locationSourceArray addObject:@"LDN"];
         [self.locationSourceArray addObject:@"DBX"];
         [self.locationSourceArray addObject:@"LAX"];
         
-        CGRect framePickerView = CGRectMake(self.view.frame.size.height, (self.view.frame.size.height*2)-22, CGRectGetWidth(self.view.frame),44);
-        UIPickerView *locationPicker =[[[UIPickerView alloc]init] initWithFrame:framePickerView];
+        CGRect framePickerView = CGRectMake(self.view.frame.size.height, (self.view.frame.size.height*2)-22, CGRectGetWidth(self.view.frame),60);
+        UIPickerView *locationPicker =[[[UIPickerView alloc] init]initWithFrame:framePickerView];
+        
+        CGAffineTransform t0 = CGAffineTransformMakeTranslation (1.0, locationPicker.bounds.size.height);
+        CGAffineTransform s0 = CGAffineTransformMakeScale       (1.0, 0.5);
+        CGAffineTransform t1 = CGAffineTransformMakeTranslation (1, locationPicker.bounds.size.height);
+        locationPicker.transform = CGAffineTransformConcat    (t0, CGAffineTransformConcat(s0, t1));
+        
         locationPicker.backgroundColor =[UIColor whiteColor];
         [self.view addSubview:locationPicker];
 
