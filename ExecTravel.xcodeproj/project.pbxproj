@@ -7,10 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		3FA453171BEF346D00B8A1A2 /* flight_builder.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FA453121BEF346D00B8A1A2 /* flight_builder.m */; settings = {ASSET_TAGS = (); }; };
-		3FA453181BEF346D00B8A1A2 /* Flow.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FA453141BEF346D00B8A1A2 /* Flow.m */; settings = {ASSET_TAGS = (); }; };
-		3FA453191BEF346D00B8A1A2 /* voucher_builder.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FA453161BEF346D00B8A1A2 /* voucher_builder.m */; settings = {ASSET_TAGS = (); }; };
-		3FA4531B1BEF396A00B8A1A2 /* flights.json in Resources */ = {isa = PBXBuildFile; fileRef = 3FA4531A1BEF396A00B8A1A2 /* flights.json */; settings = {ASSET_TAGS = (); }; };
+		157E77721BEF50BD008A0124 /* ConfirmationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 157E77711BEF50BD008A0124 /* ConfirmationViewController.m */; };
+		3FA453171BEF346D00B8A1A2 /* flight_builder.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FA453121BEF346D00B8A1A2 /* flight_builder.m */; };
+		3FA453181BEF346D00B8A1A2 /* Flow.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FA453141BEF346D00B8A1A2 /* Flow.m */; };
+		3FA453191BEF346D00B8A1A2 /* voucher_builder.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FA453161BEF346D00B8A1A2 /* voucher_builder.m */; };
+		3FA4531B1BEF396A00B8A1A2 /* flights.json in Resources */ = {isa = PBXBuildFile; fileRef = 3FA4531A1BEF396A00B8A1A2 /* flights.json */; };
 		3FFDEC9C1BEEF7140051B4CE /* airport_builder.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FFDEC981BEEF7140051B4CE /* airport_builder.m */; };
 		3FFDEC9D1BEEF7140051B4CE /* airports.json in Resources */ = {isa = PBXBuildFile; fileRef = 3FFDEC991BEEF7140051B4CE /* airports.json */; };
 		3FFDECA01BEEF7700051B4CE /* dao.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FFDEC9F1BEEF7700051B4CE /* dao.m */; };
@@ -48,6 +49,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		157E77701BEF50BD008A0124 /* ConfirmationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ConfirmationViewController.h; sourceTree = "<group>"; };
+		157E77711BEF50BD008A0124 /* ConfirmationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ConfirmationViewController.m; sourceTree = "<group>"; };
 		3FA453111BEF346D00B8A1A2 /* flight_builder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = flight_builder.h; sourceTree = "<group>"; };
 		3FA453121BEF346D00B8A1A2 /* flight_builder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = flight_builder.m; sourceTree = "<group>"; };
 		3FA453131BEF346D00B8A1A2 /* Flow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Flow.h; sourceTree = "<group>"; };
@@ -205,6 +208,8 @@
 				7B36BB521BEEC0D500EF67D3 /* FlightViewController.h */,
 				7B36BB1C1BEE797800EF67D3 /* ViewController.m */,
 				7B36BB1B1BEE797800EF67D3 /* ViewController.h */,
+				157E77701BEF50BD008A0124 /* ConfirmationViewController.h */,
+				157E77711BEF50BD008A0124 /* ConfirmationViewController.m */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -356,6 +361,7 @@
 				3FFDECA31BEEFE900051B4CE /* SelectFlightViewController.m in Sources */,
 				7B36BB171BEE797800EF67D3 /* main.m in Sources */,
 				3FFDEC9C1BEEF7140051B4CE /* airport_builder.m in Sources */,
+				157E77721BEF50BD008A0124 /* ConfirmationViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
