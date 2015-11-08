@@ -10,7 +10,6 @@
 #import "airport_builder.h"
 #import "flight_builder.h"
 #import "voucher_builder.h"
-#import "dao.h"
 
 @implementation Flow
 
@@ -64,7 +63,7 @@
 - (void)loadFlights{
     
     NSError *error;
-
+   
     NSArray* flights = [FlightBuilder flightsFromJSON:[FlightBuilder readJSONFile] error:error];
     
     for (id flight in flights){

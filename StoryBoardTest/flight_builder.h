@@ -7,7 +7,6 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "flight_builder.h"
 
 @interface FlightBuilder : NSObject
 
