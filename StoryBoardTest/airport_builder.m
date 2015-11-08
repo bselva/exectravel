@@ -12,7 +12,6 @@
 
 @implementation AirportBuilder
 
-
 + (NSData *)readJSONFile{
     
     // Read JSON data into array
@@ -25,7 +24,6 @@
     
     return jsonData;
 }
-
 
 + (NSArray *)airportsFromJSON:(NSData *)objectNotation error:(NSError *)error{
     

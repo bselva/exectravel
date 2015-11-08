@@ -7,6 +7,8 @@
 //
 
 #import "ConfirmationViewController.h"
+#import "dao.h"
+#import "Flow.h"
 
 @interface ConfirmationViewController ()
 
@@ -25,6 +27,18 @@
     [self.activityView startAnimating];
     [self.view addSubview:self.activityView];
     
+    [self.flightNumber setText:@"-"];
+    [self.from setText:@"-"];
+    [self.to setText:@"-"];
+    
+    [self.departurelDate setText:@"-"];
+    [self.departureTime setText:@"-"];
+    [self.seat setText:@"-"];
+    
+    [self.commuting setText:@"-"];
+    [self.wifi setHidden:true];
+    [self.power setHidden:true];
+    
     [NSTimer scheduledTimerWithTimeInterval:3.5
                                      target:self
                                    selector:@selector(hideActivityIndicator)
@@ -37,6 +51,26 @@
     [self.activityView stopAnimating];
     self.activityView.hidden = true;
     self.overlay.hidden = true;
+    
+    
+    Flow* flow = [Flow sharedFlow];
+    
+    Flight* f = [flow getSelectedFlight];
+    
+    [self.flightNumber setText:f.number];
+    [self.from setText:f.origin];
+    [self.to setText:f.destination];
+    
+    [self.departurelDate setText:f.departureTime];
+    [self.departureTime setText:f.departureTime];
+    [self.seat setText:f.seat];
+    
+    [self.commuting setText:@"01H13"];
+    
+    [self.wifi setHidden:false];
+    [self.power setHidden:false];
+
+    
 }
 
 

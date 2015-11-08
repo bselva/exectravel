@@ -74,6 +74,11 @@
     [self setAllFlights:flights];
 }
 
+
+-(Flight*) getSelectedFlight{
+    return [self selectedFlight];
+}
+
 - (void)loadAirports{
     
     NSError *error;
