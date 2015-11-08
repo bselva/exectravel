@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3FFDEC9C1BEEF7140051B4CE /* airport_builder.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FFDEC981BEEF7140051B4CE /* airport_builder.m */; settings = {ASSET_TAGS = (); }; };
+		3FFDEC9D1BEEF7140051B4CE /* airports.json in Resources */ = {isa = PBXBuildFile; fileRef = 3FFDEC991BEEF7140051B4CE /* airports.json */; settings = {ASSET_TAGS = (); }; };
+		3FFDEC9E1BEEF7140051B4CE /* flight_builder.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FFDEC9B1BEEF7140051B4CE /* flight_builder.m */; settings = {ASSET_TAGS = (); }; };
+		3FFDECA01BEEF7700051B4CE /* dao.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FFDEC9F1BEEF7700051B4CE /* dao.m */; settings = {ASSET_TAGS = (); }; };
+		3FFDECA31BEEFE900051B4CE /* SelectFlightViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FFDECA21BEEFE900051B4CE /* SelectFlightViewController.m */; settings = {ASSET_TAGS = (); }; };
 		7B36BB171BEE797800EF67D3 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B36BB161BEE797800EF67D3 /* main.m */; };
 		7B36BB1A1BEE797800EF67D3 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B36BB191BEE797800EF67D3 /* AppDelegate.m */; };
 		7B36BB1D1BEE797800EF67D3 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B36BB1C1BEE797800EF67D3 /* ViewController.m */; };
@@ -40,6 +45,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3FFDEC971BEEF7140051B4CE /* airport_builder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = airport_builder.h; sourceTree = "<group>"; };
+		3FFDEC981BEEF7140051B4CE /* airport_builder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = airport_builder.m; sourceTree = "<group>"; };
+		3FFDEC991BEEF7140051B4CE /* airports.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = airports.json; sourceTree = "<group>"; };
+		3FFDEC9A1BEEF7140051B4CE /* dao.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = dao.h; sourceTree = "<group>"; };
+		3FFDEC9B1BEEF7140051B4CE /* flight_builder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = flight_builder.m; sourceTree = "<group>"; };
+		3FFDEC9F1BEEF7700051B4CE /* dao.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = dao.m; sourceTree = "<group>"; };
+		3FFDECA11BEEFE900051B4CE /* SelectFlightViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SelectFlightViewController.h; sourceTree = "<group>"; };
+		3FFDECA21BEEFE900051B4CE /* SelectFlightViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SelectFlightViewController.m; sourceTree = "<group>"; };
 		7B36BB121BEE797800EF67D3 /* ExecTravel.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ExecTravel.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7B36BB161BEE797800EF67D3 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		7B36BB181BEE797800EF67D3 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -124,6 +137,14 @@
 				7B36BB151BEE797800EF67D3 /* Supporting Files */,
 				7B36BB521BEEC0D500EF67D3 /* FlightViewController.h */,
 				7B36BB531BEEC0D500EF67D3 /* FlightViewController.m */,
+				3FFDEC971BEEF7140051B4CE /* airport_builder.h */,
+				3FFDEC981BEEF7140051B4CE /* airport_builder.m */,
+				3FFDEC991BEEF7140051B4CE /* airports.json */,
+				3FFDEC9F1BEEF7700051B4CE /* dao.m */,
+				3FFDEC9A1BEEF7140051B4CE /* dao.h */,
+				3FFDEC9B1BEEF7140051B4CE /* flight_builder.m */,
+				3FFDECA11BEEFE900051B4CE /* SelectFlightViewController.h */,
+				3FFDECA21BEEFE900051B4CE /* SelectFlightViewController.m */,
 			);
 			path = StoryBoardTest;
 			sourceTree = "<group>";
@@ -270,6 +291,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7B36BB4E1BEE863B00EF67D3 /* 00_splash_emirates_logo.png in Resources */,
+				3FFDEC9D1BEEF7140051B4CE /* airports.json in Resources */,
 				7B36BB251BEE797800EF67D3 /* LaunchScreen.storyboard in Resources */,
 				7B36BB4F1BEE863B00EF67D3 /* 01_index_bg.png in Resources */,
 				7B36BB4D1BEE863B00EF67D3 /* 00_splash_bg.png in Resources */,
@@ -301,9 +323,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				7B36BB1D1BEE797800EF67D3 /* ViewController.m in Sources */,
+				3FFDECA01BEEF7700051B4CE /* dao.m in Sources */,
 				7B36BB1A1BEE797800EF67D3 /* AppDelegate.m in Sources */,
 				7B36BB541BEEC0D500EF67D3 /* FlightViewController.m in Sources */,
+				3FFDECA31BEEFE900051B4CE /* SelectFlightViewController.m in Sources */,
+				3FFDEC9E1BEEF7140051B4CE /* flight_builder.m in Sources */,
 				7B36BB171BEE797800EF67D3 /* main.m in Sources */,
+				3FFDEC9C1BEEF7140051B4CE /* airport_builder.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -494,6 +520,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				INFOPLIST_FILE = StoryBoardTestUITests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.livani.StoryBoardTestUITests;
 				PRODUCT_NAME = ExecTravel;
@@ -506,6 +533,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				INFOPLIST_FILE = StoryBoardTestUITests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.livani.StoryBoardTestUITests;
 				PRODUCT_NAME = ExecTravel;
