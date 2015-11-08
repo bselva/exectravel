@@ -8,10 +8,14 @@
 
 #import <UIKit/UIKit.h>
 
-@interface FlightViewController : UIViewController<UITextFieldDelegate>
+@interface FlightViewController : UIViewController<UITextFieldDelegate, UIPickerViewDelegate, UIPickerViewDataSource>
 
 @property (nonatomic,strong) UIToolbar *doneBar;
 
 @property (nonatomic,weak) IBOutlet UITextField *dateField;
+
+@property (nonatomic,weak) IBOutlet UITextField *locationField;
+
+@property(nonatomic, strong) NSMutableArray *locationSourceArray;
 
 @end
