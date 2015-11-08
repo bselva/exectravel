@@ -10,11 +10,7 @@
 
 @interface ViewController : UIViewController
 
-@property(strong, nonatomic) UIActivityIndicatorView *activityView;
-@property(strong, nonatomic) UIView *overlay;
-
 - (IBAction)buttonTapped:(UIButton *)sender;
-- (void)hideActivityIndicator;
 
 @end
 
