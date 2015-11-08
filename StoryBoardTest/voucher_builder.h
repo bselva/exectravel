@@ -9,10 +9,9 @@
 #import <Foundation/Foundation.h>
 
 
-@interface AirportBuilder : NSObject
+@interface VoucherBuilder : NSObject
 
-+ (NSData *)readJSONFile;
 
-+ (NSArray *)airportsFromJSON:(NSData *)objectNotation error:(NSError *)error;
++ (NSArray *)vouchers;
 
 @end

@@ -22,9 +22,6 @@
     // Do any additional setup after loading the view.
 }
 
-
-
-
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
@@ -79,6 +76,7 @@
 
         locationPicker.dataSource = self;
         locationPicker.delegate = self;
+
     }
 }
 
@@ -96,6 +94,8 @@ numberOfRowsInComponent:(NSInteger)component{
 -(void)pickerView:(UIPickerView *)pickerView didSelectRow:
 (NSInteger)row inComponent:(NSInteger)component{
     [self.locationField setText:[self.locationSourceArray objectAtIndex:row]];
+    
+    [self.locationPicker performSelector:@selector(removeFromSuperview) withObject:nil afterDelay:0.5];
 }
 - (NSString *)pickerView:(UIPickerView *)pickerView titleForRow:
 (NSInteger)row forComponent:(NSInteger)component{
@@ -109,20 +109,12 @@ numberOfRowsInComponent:(NSInteger)component{
 
 -(void)updateTextField:(id)sender
 {
-    if((UITextField*)sender == self.dateField)
-    {
-        UIDatePicker *picker = (UIDatePicker*)self.dateField.inputView;
+    UIDatePicker *picker = (UIDatePicker*)self.dateField.inputView;
     
-        NSDateFormatter *dateFormat = [[NSDateFormatter alloc] init];
-        [dateFormat setDateFormat:@"MMM d yyyy HH:mm a"];
-        self.dateField.text =  [dateFormat stringFromDate:picker.date];
-    }
+    NSDateFormatter *dateFormat = [[NSDateFormatter alloc] init];
+    [dateFormat setDateFormat:@"MMM d yyyy HH:mm a"];
+    self.dateField.text =  [dateFormat stringFromDate:picker.date];
 }
-
--(IBAction)locationPickerDone:(id)sender{
-    [self.locationField setHidden:true];
-}
-
 
 /*
 #pragma mark - Navigation

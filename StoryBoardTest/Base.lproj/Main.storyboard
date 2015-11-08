@@ -89,7 +89,6 @@
                                 </state>
                                 <connections>
                                     <action selector="alertUser:" destination="dkx-z0-nzr" eventType="touchUpInside" id="x8U-mP-DLY"/>
-                                    <action selector="buttonTapped:" destination="BYZ-38-t0r" eventType="touchDown" id="Dtp-mX-Pn7"/>
                                     <segue destination="WsN-h9-nmO" kind="show" animates="NO" id="EBx-NL-IP2"/>
                                 </connections>
                             </button>
@@ -174,6 +173,10 @@
                                 <rect key="frame" x="8" y="168" width="360" height="239"/>
                                 <animations/>
                             </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="card_greybar" translatesAutoresizingMaskIntoConstraints="NO" id="Spi-oR-Ave">
+                                <rect key="frame" x="16" y="178" width="344" height="31"/>
+                                <animations/>
+                            </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="At which location?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bRA-hz-m3R">
                                 <rect key="frame" x="23" y="310" width="149" height="21"/>
                                 <animations/>
@@ -181,7 +184,7 @@
                                 <color key="textColor" red="0.0" green="0.25098040700000002" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Dec. 1 2015 at 10:30 a.m." borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="BC7-jH-uhZ">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Nov 10 2015 10:30 AM" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="BC7-jH-uhZ">
                                 <rect key="frame" x="23" y="258" width="328" height="30"/>
                                 <animations/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -195,13 +198,13 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="New flight from SFO" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="afE-h4-pN3">
-                                <rect key="frame" x="23" y="173" width="164" height="21"/>
+                                <rect key="frame" x="23" y="183" width="164" height="21"/>
                                 <animations/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="18"/>
                                 <color key="textColor" red="0.0" green="0.25098040700000002" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="SFO" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="uUu-jk-Emg">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="NYC" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="uUu-jk-Emg">
                                 <rect key="frame" x="23" y="339" width="328" height="30"/>
                                 <animations/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -218,7 +221,7 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="change location" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UuA-LH-1sG">
-                                <rect key="frame" x="265" y="177" width="86" height="14"/>
+                                <rect key="frame" x="265" y="186" width="86" height="14"/>
                                 <animations/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="12"/>
                                 <color key="textColor" red="0.0" green="0.25098040700000002" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
@@ -242,6 +245,24 @@
                                 <rect key="frame" x="7" y="469" width="360" height="114"/>
                                 <animations/>
                             </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="You have traveled 26 times on the past 3 months" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="27N-Wc-co0">
+                                <rect key="frame" x="22" y="525" width="305" height="21"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="13"/>
+                                <color key="textColor" red="0.40000000600000002" green="0.40000000600000002" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Flights history" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Cj9-5h-xU0">
+                                <rect key="frame" x="23" y="484" width="113" height="21"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="18"/>
+                                <color key="textColor" red="0.0" green="0.25098040700000002" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="card_greybar" translatesAutoresizingMaskIntoConstraints="NO" id="soH-2l-FOd">
+                                <rect key="frame" x="15" y="479" width="344" height="31"/>
+                                <animations/>
+                            </imageView>
                         </subviews>
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -249,7 +270,7 @@
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <connections>
                         <outlet property="dateField" destination="BC7-jH-uhZ" id="zV8-Wf-zRF"/>
-                        <outlet property="locationField" destination="uUu-jk-Emg" id="oHA-nR-Zlw"/>
+                        <outlet property="locationField" destination="uUu-jk-Emg" id="Soe-eH-Qsn"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Qg8-My-gsu" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -283,6 +304,10 @@
                             </imageView>
                             <imageView opaque="NO" userInteractionEnabled="NO" alpha="0.59999999999999998" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="card_M" translatesAutoresizingMaskIntoConstraints="NO" id="lEO-hD-6V8">
                                 <rect key="frame" x="8" y="445" width="359" height="119"/>
+                                <animations/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="card_MG" translatesAutoresizingMaskIntoConstraints="NO" id="Abv-3T-TmQ">
+                                <rect key="frame" x="8" y="168" width="359" height="328"/>
                                 <animations/>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="card_greybar" translatesAutoresizingMaskIntoConstraints="NO" id="VVB-Io-sJh">
@@ -471,39 +496,11 @@
                                     <segue destination="f93-nD-ijU" kind="show" animates="NO" id="gke-BE-iee"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="st6-Nz-ZdW">
-                                <rect key="frame" x="20" y="419" width="336" height="67"/>
-                                <animations/>
-                            </button>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="card_MG" translatesAutoresizingMaskIntoConstraints="NO" id="Abv-3T-TmQ">
-                                <rect key="frame" x="8" y="165" width="359" height="342"/>
-                                <animations/>
-                            </imageView>
                         </subviews>
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
-                    <connections>
-                        <outlet property="arrivalDate1" destination="uKY-77-kfj" id="1Lc-44-pI7"/>
-                        <outlet property="arrivalDate2" destination="Ufm-Yb-Wtu" id="Fg5-tu-UXx"/>
-                        <outlet property="arrivalDate3" destination="8kT-yn-Y1e" id="gub-d9-NeH"/>
-                        <outlet property="arrivalTime1" destination="KGW-pP-wUR" id="jhL-kp-Vjl"/>
-                        <outlet property="arrivalTime2" destination="oRV-P0-S5S" id="eKs-r7-64v"/>
-                        <outlet property="arrivalTime3" destination="eBP-Yi-hud" id="fWH-nQ-aan"/>
-                        <outlet property="departureDate1" destination="2Et-4j-7hR" id="0JP-Kh-xeG"/>
-                        <outlet property="departureDate2" destination="2cS-d3-daQ" id="EpO-Ry-I06"/>
-                        <outlet property="departureDate3" destination="2cS-d3-daQ" id="kQi-Au-VHI"/>
-                        <outlet property="departureTime1" destination="zkL-la-4zY" id="lg3-U1-YTc"/>
-                        <outlet property="departureTime2" destination="h9O-5l-EUI" id="vOB-A9-Zvw"/>
-                        <outlet property="departureTime3" destination="Ygy-Yh-Gpq" id="7fl-2d-gLD"/>
-                        <outlet property="flightNumber1" destination="p5s-qk-Bpd" id="gnY-Ux-K2c"/>
-                        <outlet property="flightNumber2" destination="TpE-qd-gdW" id="ade-Et-7y4"/>
-                        <outlet property="flightNumber3" destination="9Tw-kf-cI6" id="pI3-oa-1kP"/>
-                        <outlet property="seatAvailable1" destination="AHh-YA-VyV" id="1dy-VV-nqP"/>
-                        <outlet property="seatAvailable2" destination="MR3-5A-TYa" id="0Qn-xl-haD"/>
-                        <outlet property="seatAvailable3" destination="HY3-w9-HEC" id="Od7-2i-R1s"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Jyf-GT-yr8" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -621,6 +618,13 @@
                                 <color key="textColor" red="0.0" green="0.25098040700000002" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Confirm flight EK 399" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4nc-gu-6eI">
+                                <rect key="frame" x="20" y="185" width="172" height="21"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="18"/>
+                                <color key="textColor" red="0.0" green="0.25098040700000002" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Seat" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xWt-YJ-9G1">
                                 <rect key="frame" x="201" y="328" width="49" height="21"/>
                                 <animations/>
@@ -657,13 +661,6 @@
                                     <segue destination="GFV-z3-INc" kind="show" animates="NO" id="ecE-37-bPn"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Confirm flight EK 399" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4nc-gu-6eI">
-                                <rect key="frame" x="20" y="185" width="172" height="21"/>
-                                <animations/>
-                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="18"/>
-                                <color key="textColor" red="0.0" green="0.25098040700000002" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                         </subviews>
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -686,17 +683,64 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="02f_my flights_confirmed" translatesAutoresizingMaskIntoConstraints="NO" id="UBb-OJ-jPn">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="02_my-flights_bg" translatesAutoresizingMaskIntoConstraints="NO" id="W0p-z9-ypq">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                                 <animations/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uu8-Rh-xzB">
-                                <rect key="frame" x="243" y="476" width="85" height="35"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="01_index_header" translatesAutoresizingMaskIntoConstraints="NO" id="cjL-YP-ELM">
+                                <rect key="frame" x="0.0" y="20" width="375" height="118"/>
                                 <animations/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="card_MG" translatesAutoresizingMaskIntoConstraints="NO" id="ePB-Rk-DUe">
+                                <rect key="frame" x="8" y="168" width="359" height="416"/>
+                                <animations/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="card_greybar" translatesAutoresizingMaskIntoConstraints="NO" id="dlZ-bt-yKf">
+                                <rect key="frame" x="16" y="182" width="343" height="31"/>
+                                <animations/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oGi-wJ-7ep">
+                                <rect key="frame" x="116" y="266" width="144" height="30"/>
+                                <animations/>
+                                <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Check-in">
+                                    <color key="titleColor" red="0.90196079019999997" green="0.90196079019999997" blue="0.90196079019999997" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="es7-Ec-LsY">
+                                <rect key="frame" x="116" y="337" width="144" height="30"/>
+                                <animations/>
+                                <color key="backgroundColor" red="0.25098040700000002" green="0.0" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Luggage Service">
+                                    <color key="titleColor" red="0.90196079019999997" green="0.90196079019999997" blue="0.90196079019999997" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QtA-e7-Q9e">
+                                <rect key="frame" x="228" y="512" width="99" height="30"/>
+                                <animations/>
+                                <color key="backgroundColor" red="0.7019608021" green="0.7019608021" blue="0.7019608021" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="OK">
+                                    <color key="titleColor" red="0.90196079019999997" green="0.90196079019999997" blue="0.90196079019999997" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
                                 <connections>
-                                    <segue destination="BYZ-38-t0r" kind="showDetail" animates="NO" id="HkC-q3-dMH"/>
+                                    <segue destination="BYZ-38-t0r" kind="show" animates="NO" id="swv-JZ-qTe"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2tJ-lE-NMs">
+                                <rect key="frame" x="116" y="410" width="144" height="30"/>
+                                <animations/>
+                                <color key="backgroundColor" red="0.20000000300000001" green="0.20000000300000001" blue="0.20000000300000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Private driver">
+                                    <color key="titleColor" red="0.90196079019999997" green="0.90196079019999997" blue="0.90196079019999997" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Flight EK 399 confirmed" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bei-R6-1kB">
+                                <rect key="frame" x="30" y="187" width="194" height="21"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="18"/>
+                                <color key="textColor" red="0.0" green="0.25098040700000002" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -711,7 +755,6 @@
     <resources>
         <image name="01_index_header" width="972" height="263"/>
         <image name="02_my-flights_bg" width="1080" height="1920"/>
-        <image name="02f_my flights_confirmed" width="1080" height="1920"/>
         <image name="btn_blue" width="1000" height="145"/>
         <image name="card_G" width="1000" height="1220"/>
         <image name="card_M" width="1000" height="785"/>
@@ -719,7 +762,7 @@
         <image name="card_greybar" width="954" height="107"/>
     </resources>
     <inferredMetricsTieBreakers>
+        <segue reference="oaS-jG-ifA"/>
         <segue reference="fQI-hn-cuB"/>
-        <segue reference="gke-BE-iee"/>
     </inferredMetricsTieBreakers>
 </document>

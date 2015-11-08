@@ -1,20 +1,18 @@
 //
-//  ViewController.h
-//  StoryBoardTest
+//  ConfirmationViewController.h
+//  ExecTravel
 //
-//  Created by Livani Pillay on 11/7/15.
+//  Created by Bruno on 08/11/15.
 //  Copyright © 2015 livani. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
+@interface ConfirmationViewController : UIViewController
 
 @property(strong, nonatomic) UIActivityIndicatorView *activityView;
 @property(strong, nonatomic) UIView *overlay;
 
-- (IBAction)buttonTapped:(UIButton *)sender;
 - (void)hideActivityIndicator;
 
 @end
-
