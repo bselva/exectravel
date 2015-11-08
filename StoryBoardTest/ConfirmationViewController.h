@@ -13,6 +13,26 @@
 @property(strong, nonatomic) UIActivityIndicatorView *activityView;
 @property(strong, nonatomic) UIView *overlay;
 
+
+@property (nonatomic,strong) IBOutlet UILabel *flightNumber;
+@property (nonatomic,strong) IBOutlet UILabel *from;
+@property (nonatomic,strong) IBOutlet UILabel *to;
+
+
+@property (nonatomic,strong) IBOutlet UILabel *departurelDate;
+@property (nonatomic,strong) IBOutlet UILabel *departureTime;
+
+
+@property (nonatomic,strong) IBOutlet UILabel *seat;
+@property (nonatomic,strong) IBOutlet UILabel *commuting;
+
+
+@property (nonatomic,strong) IBOutlet UIImageView *wifi;
+@property (nonatomic,strong) IBOutlet UIImageView *power;
+
+
+
+
 - (void)hideActivityIndicator;
 
 @end

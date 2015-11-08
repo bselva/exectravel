@@ -531,6 +531,7 @@
                                 <rect key="frame" x="23" y="278" width="336" height="67"/>
                                 <animations/>
                                 <connections>
+                                    <action selector="buttonTapped1:" destination="PdM-zy-DQB" eventType="touchDown" id="hk1-LU-gUz"/>
                                     <segue destination="f93-nD-ijU" kind="show" animates="NO" id="oaS-jG-ifA"/>
                                 </connections>
                             </button>
@@ -538,6 +539,7 @@
                                 <rect key="frame" x="24" y="344" width="336" height="67"/>
                                 <animations/>
                                 <connections>
+                                    <action selector="buttonTapped2:" destination="PdM-zy-DQB" eventType="touchDown" id="DXh-rz-kIN"/>
                                     <segue destination="f93-nD-ijU" kind="show" animates="NO" id="zxm-XC-nm6"/>
                                 </connections>
                             </button>
@@ -545,6 +547,7 @@
                                 <rect key="frame" x="23" y="412" width="336" height="67"/>
                                 <animations/>
                                 <connections>
+                                    <action selector="buttonTapped3:" destination="PdM-zy-DQB" eventType="touchDown" id="8Eg-HN-ZYj"/>
                                     <segue destination="f93-nD-ijU" kind="show" animates="NO" id="gke-BE-iee"/>
                                 </connections>
                             </button>
@@ -581,7 +584,7 @@
         <!--ConfirmFlightViewController Scene-->
         <scene sceneID="fKo-iT-MUg">
             <objects>
-                <viewController title="ConfirmFlightViewController Scene" id="f93-nD-ijU" sceneMemberID="viewController">
+                <viewController title="ConfirmFlightViewController Scene" id="f93-nD-ijU" customClass="ConfirmationViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="0ob-34-iqU"/>
                         <viewControllerLayoutGuide type="bottom" id="JJk-yU-iwD"/>
@@ -662,15 +665,22 @@
                                 <color key="textColor" red="0.20000000300000001" green="0.20000000300000001" blue="0.20000000300000001" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="1h10 min" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jaL-b6-7MG">
-                                <rect key="frame" x="50" y="500" width="168" height="34"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="1h10" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jaL-b6-7MG">
+                                <rect key="frame" x="50" y="500" width="67" height="34"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="24"/>
+                                <color key="textColor" red="0.20000000300000001" green="0.20000000300000001" blue="0.20000000300000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="min" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7Wd-b7-ifG">
+                                <rect key="frame" x="113" y="500" width="50" height="34"/>
                                 <animations/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="24"/>
                                 <color key="textColor" red="0.20000000300000001" green="0.20000000300000001" blue="0.20000000300000001" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="9A" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SMB-Gf-jgq">
-                                <rect key="frame" x="201" y="357" width="131" height="34"/>
+                                <rect key="frame" x="201" y="357" width="43" height="34"/>
                                 <animations/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="28"/>
                                 <color key="textColor" red="0.20000000300000001" green="0.20000000300000001" blue="0.20000000300000001" alpha="1" colorSpace="calibratedRGB"/>
@@ -690,8 +700,15 @@
                                 <color key="textColor" red="0.0" green="0.25098040700000002" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Confirm flight EK 399" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4nc-gu-6eI">
-                                <rect key="frame" x="20" y="185" width="172" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Confirm flight" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4nc-gu-6eI">
+                                <rect key="frame" x="19" y="185" width="109" height="21"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="18"/>
+                                <color key="textColor" red="0.0" green="0.25098040700000002" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="EK999999" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cvt-rB-FLE">
+                                <rect key="frame" x="136" y="185" width="108" height="21"/>
                                 <animations/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="18"/>
                                 <color key="textColor" red="0.0" green="0.25098040700000002" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
@@ -733,11 +750,30 @@
                                     <segue destination="GFV-z3-INc" kind="show" animates="NO" id="ecE-37-bPn"/>
                                 </connections>
                             </button>
+                            <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="icon_charger" translatesAutoresizingMaskIntoConstraints="NO" id="pmW-Rk-oUF">
+                                <rect key="frame" x="305" y="261" width="32" height="32"/>
+                                <animations/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="icon_wifi" translatesAutoresizingMaskIntoConstraints="NO" id="Me7-Ou-Ymn">
+                                <rect key="frame" x="305" y="301" width="32" height="32"/>
+                                <animations/>
+                            </imageView>
                         </subviews>
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="commuting" destination="jaL-b6-7MG" id="LOP-BN-Rl8"/>
+                        <outlet property="departureTime" destination="8Da-Fb-Dcj" id="B23-iE-GM6"/>
+                        <outlet property="departurelDate" destination="GhT-Sr-5yf" id="PdX-8A-DQx"/>
+                        <outlet property="flightNumber" destination="cvt-rB-FLE" id="C5V-xW-bGS"/>
+                        <outlet property="from" destination="XOR-3c-8E7" id="xmf-eS-gTT"/>
+                        <outlet property="power" destination="pmW-Rk-oUF" id="xUD-fa-wTc"/>
+                        <outlet property="seat" destination="SMB-Gf-jgq" id="FVA-NW-UoW"/>
+                        <outlet property="to" destination="aYx-eL-JlV" id="q8j-E5-vjo"/>
+                        <outlet property="wifi" destination="Me7-Ou-Ymn" id="KPC-BQ-NS3"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="M0R-HB-HwA" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -806,8 +842,22 @@
                                     <color key="titleColor" red="0.90196079019999997" green="0.90196079019999997" blue="0.90196079019999997" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Flight EK 399 confirmed" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bei-R6-1kB">
-                                <rect key="frame" x="30" y="187" width="194" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Flight" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bei-R6-1kB">
+                                <rect key="frame" x="30" y="187" width="54" height="21"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="18"/>
+                                <color key="textColor" red="0.0" green="0.25098040700000002" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="confirmed" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MSe-1s-5hU">
+                                <rect key="frame" x="143" y="187" width="131" height="21"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="18"/>
+                                <color key="textColor" red="0.0" green="0.25098040700000002" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="99999" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="s9h-aj-gQY">
+                                <rect key="frame" x="92" y="187" width="54" height="21"/>
                                 <animations/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="18"/>
                                 <color key="textColor" red="0.0" green="0.25098040700000002" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
@@ -832,9 +882,11 @@
         <image name="card_M" width="1000" height="785"/>
         <image name="card_MG" width="950" height="1303"/>
         <image name="card_greybar" width="954" height="107"/>
+        <image name="icon_charger" width="26" height="14"/>
+        <image name="icon_wifi" width="28" height="21"/>
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="oaS-jG-ifA"/>
-        <segue reference="fQI-hn-cuB"/>
+        <segue reference="ZMv-qs-h96"/>
     </inferredMetricsTieBreakers>
 </document>

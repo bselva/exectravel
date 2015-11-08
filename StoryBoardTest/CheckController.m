@@ -7,6 +7,7 @@
 //
 
 #import "CheckController.h"
+#import "Flow.h"
 
 @interface CheckController ()
 
@@ -17,6 +18,12 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    
+    Flow* flow = [Flow sharedFlow];
+    
+    Flight* f = [flow getSelectedFlight];
+    
+    [self.flightNumber setText:f.number];
 }
 
 - (void)didReceiveMemoryWarning {

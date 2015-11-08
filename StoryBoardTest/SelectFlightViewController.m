@@ -113,6 +113,40 @@
     
 }
 
+-(void)selectFlight:(int)index{
+
+    Flow* flow = [Flow sharedFlow];
+    
+    NSArray * temp = [flow getFlightsFromSelectedCitiesAndDate];
+    
+    if([temp count] > index){
+        
+        Flight* selectedFlight = [temp objectAtIndex:index];
+        [flow setSelectedFlight:selectedFlight];
+        
+        
+    }
+    
+}
+- (IBAction)buttonTapped1:(UIButton *)sender{
+    
+    [self selectFlight:0];
+    
+}
+
+- (IBAction)buttonTapped2:(UIButton *)sender{
+    
+    
+    [self selectFlight:1];
+}
+
+- (IBAction)buttonTapped3:(UIButton *)sender{
+    
+    
+    [self selectFlight:2];
+}
+
+
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.

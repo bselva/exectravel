@@ -10,4 +10,6 @@
 
 @interface CheckController : UIViewController
 
+@property (nonatomic,strong) IBOutlet UILabel *flightNumber;
+
 @end

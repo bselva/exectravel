@@ -36,5 +36,9 @@
 
 - (void)hideActivityIndicator;
 
+- (IBAction)buttonTapped1:(UIButton *)sender;
+- (IBAction)buttonTapped2:(UIButton *)sender;
+- (IBAction)buttonTapped3:(UIButton *)sender;
+
 
 @end

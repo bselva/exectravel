@@ -34,5 +34,6 @@
 - (NSArray*)getUniqueAirportList;
 - (NSArray*)getFlightsFromSelectedCitiesAndDate;
 - (UserData*) getUserData;
+- (Flight*) getSelectedFlight;
 
 @end
