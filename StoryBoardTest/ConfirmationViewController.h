@@ -19,16 +19,20 @@
 @property (nonatomic,strong) IBOutlet UILabel *to;
 
 
-@property (nonatomic,strong) IBOutlet UILabel *departurelDate;
+@property (nonatomic,strong) IBOutlet UILabel *departureDate;
 @property (nonatomic,strong) IBOutlet UILabel *departureTime;
-
+@property (nonatomic,strong) IBOutlet UILabel *arrivalDate;
+@property (nonatomic,strong) IBOutlet UILabel *arrivalTime;
 
 @property (nonatomic,strong) IBOutlet UILabel *seat;
-@property (nonatomic,strong) IBOutlet UILabel *commuting;
+@property (nonatomic,strong) IBOutlet UILabel *aircraft;
+@property (nonatomic,strong) IBOutlet UILabel *info;
 
+@property (nonatomic,strong) IBOutlet UIImageView *aircraftImg;
 
 @property (nonatomic,strong) IBOutlet UIImageView *wifi;
 @property (nonatomic,strong) IBOutlet UIImageView *power;
+@property (nonatomic,strong) IBOutlet UIImageView *tv;
 
 
 

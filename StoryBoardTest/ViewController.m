@@ -19,11 +19,7 @@
     [super viewDidLoad];
 }
 
-- (IBAction)buttonTapped:(UIButton *)sender{
-   
-    NSLog(@"Button Tapped");
-    
-}
+
 
 - (void)awakeFromNib{
     

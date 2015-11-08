@@ -31,13 +31,18 @@
     [self.from setText:@"-"];
     [self.to setText:@"-"];
     
-    [self.departurelDate setText:@"-"];
+    [self.departureDate setText:@"-"];
     [self.departureTime setText:@"-"];
     [self.seat setText:@"-"];
     
-    [self.commuting setText:@"-"];
+    
     [self.wifi setHidden:true];
     [self.power setHidden:true];
+    [self.tv setHidden:true];
+    
+    [self.info setHidden:true];
+    [self.aircraftImg setHidden:true];
+    [self.info setHidden:true];
     
     [NSTimer scheduledTimerWithTimeInterval:3.5
                                      target:self
@@ -61,14 +66,21 @@
     [self.from setText:f.origin];
     [self.to setText:f.destination];
     
-    [self.departurelDate setText:f.departureTime];
+    [self.departureDate setText:f.departureTime];
     [self.departureTime setText:f.departureTime];
-    [self.seat setText:f.seat];
     
-    [self.commuting setText:@"01H13"];
+    [self.arrivalDate setText:f.arrivalTime];
+    [self.arrivalDate setText:f.arrivalTime];
+    
+    [self.seat setText:f.seat];
     
     [self.wifi setHidden:false];
     [self.power setHidden:false];
+    [self.tv setHidden:false];
+
+    [self.info setHidden:false];
+    [self.aircraftImg setHidden:false];
+    [self.info setHidden:false];
 
     
 }

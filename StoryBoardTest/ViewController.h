@@ -13,7 +13,6 @@
 @property (nonatomic,strong) IBOutlet UILabel *vouchersAvailabe;
 @property (nonatomic,strong) IBOutlet UILabel *headQuarters;
 
-- (IBAction)buttonTapped:(UIButton *)sender;
 
 @end
 
