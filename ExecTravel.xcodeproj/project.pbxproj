@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3F1BF5FA1BEED9500012B673 /* dao.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F1BF5F91BEED9500012B673 /* dao.m */; settings = {ASSET_TAGS = (); }; };
+		3FB617451BEEE8AC003246BC /* airports.json in Resources */ = {isa = PBXBuildFile; fileRef = 3FB617441BEEE8AC003246BC /* airports.json */; settings = {ASSET_TAGS = (); }; };
+		3FFDEC901BEEEB630051B4CE /* flight_builder.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FFDEC8F1BEEEB630051B4CE /* flight_builder.m */; settings = {ASSET_TAGS = (); }; };
+		3FFDEC941BEEEBCD0051B4CE /* airport_builder.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FFDEC931BEEEBCD0051B4CE /* airport_builder.m */; settings = {ASSET_TAGS = (); }; };
 		7B36BB171BEE797800EF67D3 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B36BB161BEE797800EF67D3 /* main.m */; };
 		7B36BB1A1BEE797800EF67D3 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B36BB191BEE797800EF67D3 /* AppDelegate.m */; };
 		7B36BB1D1BEE797800EF67D3 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B36BB1C1BEE797800EF67D3 /* ViewController.m */; };
@@ -39,6 +43,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3F1BF5F91BEED9500012B673 /* dao.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = dao.m; sourceTree = "<group>"; };
+		3FB617441BEEE8AC003246BC /* airports.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = airports.json; sourceTree = "<group>"; };
+		3FFDEC8F1BEEEB630051B4CE /* flight_builder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = flight_builder.m; sourceTree = "<group>"; };
+		3FFDEC931BEEEBCD0051B4CE /* airport_builder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = airport_builder.m; sourceTree = "<group>"; };
+		3FFDEC951BEEECBD0051B4CE /* airport_builder.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = airport_builder.h; sourceTree = "<group>"; };
+		3FFDEC961BEEED000051B4CE /* dao.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = dao.h; sourceTree = "<group>"; };
 		7B36BB121BEE797800EF67D3 /* ExecTravel.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ExecTravel.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7B36BB161BEE797800EF67D3 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		7B36BB181BEE797800EF67D3 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -119,6 +129,12 @@
 				7B36BB231BEE797800EF67D3 /* LaunchScreen.storyboard */,
 				7B36BB261BEE797800EF67D3 /* Info.plist */,
 				7B36BB151BEE797800EF67D3 /* Supporting Files */,
+				3F1BF5F91BEED9500012B673 /* dao.m */,
+				3FFDEC961BEEED000051B4CE /* dao.h */,
+				3FFDEC951BEEECBD0051B4CE /* airport_builder.h */,
+				3FFDEC931BEEEBCD0051B4CE /* airport_builder.m */,
+				3FB617441BEEE8AC003246BC /* airports.json */,
+				3FFDEC8F1BEEEB630051B4CE /* flight_builder.m */,
 			);
 			path = StoryBoardTest;
 			sourceTree = "<group>";
@@ -227,6 +243,7 @@
 				TargetAttributes = {
 					7B36BB111BEE797800EF67D3 = {
 						CreatedOnToolsVersion = 7.1;
+						DevelopmentTeam = F8YTQAG783;
 					};
 					7B36BB2A1BEE797800EF67D3 = {
 						CreatedOnToolsVersion = 7.1;
@@ -264,6 +281,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7B36BB4E1BEE863B00EF67D3 /* 00_splash_emirates_logo.png in Resources */,
+				3FB617451BEEE8AC003246BC /* airports.json in Resources */,
 				7B36BB251BEE797800EF67D3 /* LaunchScreen.storyboard in Resources */,
 				7B36BB4F1BEE863B00EF67D3 /* 01_index_bg.png in Resources */,
 				7B36BB4D1BEE863B00EF67D3 /* 00_splash_bg.png in Resources */,
@@ -294,8 +312,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3F1BF5FA1BEED9500012B673 /* dao.m in Sources */,
 				7B36BB1D1BEE797800EF67D3 /* ViewController.m in Sources */,
 				7B36BB1A1BEE797800EF67D3 /* AppDelegate.m in Sources */,
+				3FFDEC901BEEEB630051B4CE /* flight_builder.m in Sources */,
+				3FFDEC941BEEEBCD0051B4CE /* airport_builder.m in Sources */,
 				7B36BB171BEE797800EF67D3 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -435,10 +456,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = StoryBoardTest/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.livani.StoryBoardTest;
 				PRODUCT_NAME = ExecTravel;
+				PROVISIONING_PROFILE = "";
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
@@ -447,10 +472,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = StoryBoardTest/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.livani.StoryBoardTest;
 				PRODUCT_NAME = ExecTravel;
+				PROVISIONING_PROFILE = "";
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
@@ -522,6 +551,7 @@
 				7B36BB411BEE797800EF67D3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		7B36BB421BEE797800EF67D3 /* Build configuration list for PBXNativeTarget "ExecTravelTests" */ = {
 			isa = XCConfigurationList;
@@ -530,6 +560,7 @@
 				7B36BB441BEE797800EF67D3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		7B36BB451BEE797800EF67D3 /* Build configuration list for PBXNativeTarget "ExecTravelUITests" */ = {
 			isa = XCConfigurationList;
@@ -538,6 +569,7 @@
 				7B36BB471BEE797800EF67D3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

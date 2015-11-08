@@ -10,6 +10,7 @@
 
 @interface ViewController : UIViewController
 
+- (IBAction)buttonTapped:(UIButton *)sender;
 
 @end
 

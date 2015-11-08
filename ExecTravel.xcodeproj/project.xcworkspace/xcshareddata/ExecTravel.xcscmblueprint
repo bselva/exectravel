@@ -1,37 +1,37 @@
 {
-  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "147435F62BBF1D8A7FB59276BC8C619E190B2B35+++BF21012",
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "147435F62BBF1D8A7FB59276BC8C619E190B2B35+++5B12894",
   "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
 
   },
   "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
-    "147435F62BBF1D8A7FB59276BC8C619E190B2B35+++BF21012" : 0,
-    "147435F62BBF1D8A7FB59276BC8C619E190B2B35+++1DA0225" : 0,
-    "147435F62BBF1D8A7FB59276BC8C619E190B2B35+++70D735E" : 0
+    "147435F62BBF1D8A7FB59276BC8C619E190B2B35+++71E8CB1" : 0,
+    "147435F62BBF1D8A7FB59276BC8C619E190B2B35+++532F580" : 0,
+    "147435F62BBF1D8A7FB59276BC8C619E190B2B35+++5B12894" : 0
   },
   "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "86CDA239-97C3-40DE-9490-69817FBCB611",
   "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
-    "147435F62BBF1D8A7FB59276BC8C619E190B2B35+++BF21012" : "exectravel\/",
-    "147435F62BBF1D8A7FB59276BC8C619E190B2B35+++1DA0225" : "",
-    "147435F62BBF1D8A7FB59276BC8C619E190B2B35+++70D735E" : ""
+    "147435F62BBF1D8A7FB59276BC8C619E190B2B35+++71E8CB1" : "",
+    "147435F62BBF1D8A7FB59276BC8C619E190B2B35+++532F580" : "",
+    "147435F62BBF1D8A7FB59276BC8C619E190B2B35+++5B12894" : "exectravel\/"
   },
   "DVTSourceControlWorkspaceBlueprintNameKey" : "ExecTravel",
   "DVTSourceControlWorkspaceBlueprintVersion" : 204,
   "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "ExecTravel.xcodeproj",
   "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
     {
-      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "http:\/\/github.com\/bselva\/exectravel",
-      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
-      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "147435F62BBF1D8A7FB59276BC8C619E190B2B35+++1DA0225"
-    },
-    {
       "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/bselva\/exectravel.git",
       "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
-      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "147435F62BBF1D8A7FB59276BC8C619E190B2B35+++70D735E"
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "147435F62BBF1D8A7FB59276BC8C619E190B2B35+++532F580"
     },
     {
       "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "http:\/\/github.com\/bselva\/exectravel",
       "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
-      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "147435F62BBF1D8A7FB59276BC8C619E190B2B35+++BF21012"
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "147435F62BBF1D8A7FB59276BC8C619E190B2B35+++5B12894"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "http:\/\/github.com\/bselva\/exectravel",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "147435F62BBF1D8A7FB59276BC8C619E190B2B35+++71E8CB1"
     }
   ]
 }
