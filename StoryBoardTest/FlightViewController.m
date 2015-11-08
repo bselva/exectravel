@@ -71,17 +71,7 @@
     }
     else if((UITextField*)sender == self.locationField){
         
-<<<<<<< HEAD
-        
-=======
-        self.locationSourceArray =  [[NSMutableArray alloc]init];
 
-        [self.locationSourceArray addObject:@"SFO"];
-        [self.locationSourceArray addObject:@"NYC"];
-        [self.locationSourceArray addObject:@"LDN"];
-        [self.locationSourceArray addObject:@"DBX"];
-        [self.locationSourceArray addObject:@"LAX"];
->>>>>>> d36d8a5e8f3424553d06ca18ac7e75fcc4186320
         
         CGRect framePickerView = CGRectMake(self.view.frame.size.height, (self.view.frame.size.height*2)-22, CGRectGetWidth(self.view.frame),60);
         UIPickerView *locationPicker =[[[UIPickerView alloc] init]initWithFrame:framePickerView];
